@@ -4,24 +4,28 @@ Jeux de données
 ===================
 
 
-Des échantillons des bases de données de l'IGN (BD TOPO® et BD CARTO®) sont téléchargeables ici : 
+Des échantillons des bases de données de l'IGN sont téléchargeables ici : 
 
 
-1. « Check out »
- 
-   .. container:: svnurl
+.. container:: chemin
+    
+      **BD TOPO®** : 
+          
+          http://svn.code.sf.net/p/oxygene-project/code/main/trunk/geoxygene-data/ign-echantillon/bdtopo/72_BDTOPO_shp/echantillon-bdtopo-x062-ed111.zip
+  
+      **BD CARTO®** : 
+         
+          http://svn.code.sf.net/p/oxygene-project/code/main/trunk/geoxygene-data/ign-echantillon/bdcarto/echantillon-bdcarto-x072-ed111.zip
 
-      svn checkout http://svn.code.sf.net/p/oxygene-project/code/main/trunk/geoxygene-data/
+
+Dézipper les fichiers après leurs téléchargements sur votre disque dur.
+
+C'est tout bon, vous avez 2 jeux de données pour vos tests.
 
 
-2. En ligne
+.. 1. « Check out »
+.. svn checkout http://svn.code.sf.net/p/oxygene-project/code/main/trunk/geoxygene-data/
 
-   .. container:: chemin
-
-      http://svn.code.sf.net/p/oxygene-project/code/main/trunk/geoxygene-data/ign-echantillon/
-      
-      
-      
 
 .. 1. Mode développeur
 ..    => 2 accès : classpath ou système de fichiers

@@ -14,9 +14,17 @@ Installation
 GeOxygene 3D (v1.6) executable installation
 ----------------------------------------------
 
-1. Download and unzip folder corresponding to the user operating system.
+1. Download the zip file 
 
-2. GeOxygene3D rendering relies on Java 3D library which must be downloaded from address below :
+   .. container:: svnurl
+
+      http://sourceforge.net/projects/oxygene-project/files/GeOxygene/1.6/GeOxygene-Viewer3D-1.6.zip/download
+
+2. Copy the whole folder contents into your system 
+
+   .. Unzip folder corresponding to the user operating system.
+
+3. GeOxygene3D rendering relies on Java 3D library which must be downloaded from address below :
 
    .. container:: chemin
 
@@ -36,9 +44,27 @@ GeOxygene 3D (v1.6) executable installation
    - j3dcore-ogl.dll
 
 
-3. Launch GeOxygene 3D module with GeOxygene.bat (GeOxygene 3D folder root).
+4. Launch GeOxygene 3D module with GeOxygene.bat (GeOxygene 3D folder root).
 
-4. Optional : in order to use GeOxygene 3D in full capabilities, TetGen tetraedrisation must be downloaded
+   .. blabla
+
+   If Java Virtual Machine heap space memory error happens, user is advised to open geoxygene.bat file with
+   any text editor to modify following line, replacing MaxPermSize field by new allocated space memory
+   (MB).
+   
+   .. container:: chemin
+   
+      set JAVA_MAXMEM="-Xms1024m-Xmx1024m -XX:PermSize=256m -XX:MaxPermSize=256m"
+
+
+   Following line modification (from same file) enables to change language property ("en" variable).
+   
+   .. container:: chemin
+
+      set GEOX_OPTS="-Duser.language=en"
+
+
+5. Optional : in order to use GeOxygene 3D in full capabilities, TetGen tetraedrisation must be downloaded
    from following location :
    
    .. container:: chemin

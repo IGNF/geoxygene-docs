@@ -206,13 +206,13 @@ Si vous êtes enregistré sur `Sourceforge <http://sourceforge.net/>`_  et si vo
 
 .. container:: svnurl
     
-   https://svn.code.sf.net/p/oxygene-project/code/main/trunk/geoxygene-ojplugin 
+   https://svn.code.sf.net/p/oxygene-project/code/main/trunk/geoxygene-extension/geoxygene-ojplugin/ 
 
 Sinon :
 
 .. container:: svnurl
    
-   http://svn.code.sf.net/p/oxygene-project/code/main/trunk/geoxygene-ojplugin
+   http://svn.code.sf.net/p/oxygene-project/code/main/trunk/geoxygene-extension/geoxygene-ojplugin/
 
 
 Compilation

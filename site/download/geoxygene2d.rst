@@ -7,22 +7,27 @@ Viewer GeOxygene 2D
 * Publication date : 2014-01-23
 * Version : 1.6
 
-Windows Installation
+Installation
 **********************
+
+A Java SDK installation as a prerequisite.
 
 1. Download the zip file 
 
-.. container:: svnurl
+   .. container:: svnurl
 
-   https://sourceforge.net/projects/oxygene-project/files/GeOxygene/1.6/GeOxygene-Viewer2D-1.6.zip
-     
+      http://sourceforge.net/projects/oxygene-project/files/GeOxygene/1.6/GeOxygene-Viewer2D-1.6.zip/download
+      
 2. Copy the whole folder contents into your system 
 
-3. Double-click in 
+3. Double-click in :
 
+   .. container:: chemin
+    
+      **Windows** : geoxygene.bat
+  
+      **Linux** : geoxygene.sh
 
-geoxygene.bat.
- 
 4. You will now see the GeOxygene 2D graphical interface  
 
 

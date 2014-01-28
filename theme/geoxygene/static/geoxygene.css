@@ -317,7 +317,7 @@ div.header div.wrap {
     left:200px;
     overflow: hidden;
     text-indent: -9999em;
-    background: url(img/geoxygene-logo-neutre.png) no-repeat;
+    background: url(img/geoxygene.png) no-repeat;
 }
 #logo_cogit {
     padding: 0;
@@ -335,25 +335,25 @@ div.header div.wrap {
     margin : 0px;
     overflow: hidden;
     text-indent: -9999em;
-    background: url(img/Logo_cogit_grand_avec_texte.png) no-repeat;
+    background: url(img/Logo_cogit.png) no-repeat;
 }
 #logo_ign {
     padding: 0;
     position: absolute;
-    top: 8px;
+    top: 20px;
     right: 60px;
     padding: 0px;
     margin : 0px;
 }
 #logo_ign a {
     float: right;
-    width: 57px;
-    height: 60px;
+    width: 65px;
+    height: 35px;
     padding: 0px;
     margin : 0px;
     overflow: hidden;
     text-indent: -9999em;
-    background: url(img/5313354.jpg) no-repeat;
+    background: url(img/logo-IGN-simple.png) no-repeat;
 }
 #logo_sourceforge {
     padding: 0;

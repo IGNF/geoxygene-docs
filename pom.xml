@@ -16,6 +16,7 @@
 	<groupId>fr.ign.cogit</groupId>
 	<artifactId>geoxygene-docs</artifactId>
 	<version>1.0-SNAPSHOT</version>
+	
 	<name>GeOxygene Documentation Site</name>
 	<description>Source repository for the GeOxygene documentation site</description>
 
@@ -35,7 +36,6 @@
 			</roles>
 		</developer>
 	</developers>
-
 
 	<properties>
 		<ant.target>full</ant.target>
@@ -71,7 +71,7 @@
 							<tasks>
 								<ant antfile="build.xml" dir="${basedir}" target="${ant.target}">
 									<property name="build.directory" value="${build.directory}" />
-									<property name="project.version" value="${project.version}" />
+									<property name="project.version" value="1.6" />
 								</ant>
 							</tasks>
 						</configuration>

@@ -12,17 +12,17 @@ GeOxygene library is used by these plugins
 Installation
 **************
 
-Set up OpenJump as a prerequisite.
+Set up OpenJump as a prerequisite, version 1.6 or later.
 
 1. Download the plugin 
 
-.. container:: svnurl
+   .. container:: svnurl
 
-   http://sourceforge.net/projects/oxygene-project/files/GeOxygene%20Plugin%20for%20OpenJUMP/0.1/geoxygene-plugin-0.1.zip/download
+      https://sourceforge.net/projects/oxygene-project/files/GeOxygene%20Plugin%20for%20OpenJUMP/1.1/geoxygene-openjump-plugin-1.1.zip
      
 2. Copy the whole folder contents into your **<myOpenjumpFolder>**/lib/ext
 
-3. Start openjump.
+3. Start OpenJUMP.
  
 4. You will now see a new item menu called "GeOxygene" 
 
