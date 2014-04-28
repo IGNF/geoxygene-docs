@@ -89,5 +89,24 @@
 			
 		</plugins>
 	</build>
+	
+	<distributionManagement>
+        <downloadUrl>http://sourceforge.net/projects/oxygene-project/files/</downloadUrl>
+        <repository>
+            <id>releases</id>
+            <name>Nexus Releases Repository</name>
+            <url>https://forge-cogit.ign.fr/nexus/content/repositories/releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>Nexus Snapshots Repository</name>
+            <url>https://forge-cogit.ign.fr/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <site>
+            <id>oxygene-project.sf.net</id>
+            <name>GeOxygene website</name>
+            <url>scp://shell.sourceforge.net/home/project-web/oxygene-project/htdocs</url>
+        </site>
+    </distributionManagement>
 
 </project>
