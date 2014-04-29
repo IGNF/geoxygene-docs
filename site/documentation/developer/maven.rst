@@ -33,7 +33,7 @@ The reference of this approach is explained here : http://maven.apache.org/guide
 
    .. container:: chemin
    
-      echo -n | openssl s_client -connect dionysos2.ign.fr:443 | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' > dionysos2.cert 
+      echo -n | openssl s_client -connect forge-cogit.ign.fr:443 | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' > forge-cogit.crt 
 
 
 **Second method** : Download the certificate from your browser like this : 
@@ -60,7 +60,7 @@ The reference of this approach is explained here : http://maven.apache.org/guide
       1.6 Click on "Export"
 
       1.7 Save the certicate in your disk. 
-          For example : **E:\\certificat\\dionysos2.crt**
+          For example : **E:\\certificat\\forge-cogit.crt**
 
    .. container:: rightside
    
@@ -76,7 +76,7 @@ The reference of this approach is explained here : http://maven.apache.org/guide
 
    .. container:: chemin
  
-         keytool -v -alias mavensrv -import -file E:\\certificat\\dionysos2.crt -keystore trust.jks
+         keytool -v -alias mavensrv -import -file E:\\certificat\\forge-cogit.crt -keystore trust.jks
 
 
 3. Define a new environment variable
