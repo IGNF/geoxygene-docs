@@ -47,7 +47,7 @@ The reference of this approach is explained here : http://maven.apache.org/guide
 
           .. container:: svnurl
     
-             https://cogit-services.ign.fr/nexus-webapp-1.4.1/index.html
+             https://forge-cogit.ign.fr/nexus/content/repositories/
 
       1.2 In the navigation bar, click on the padlock
 

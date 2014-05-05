@@ -6,7 +6,7 @@ GeOxygene releases
 The current development version is GeOxygene-1.6-SNAPSHOT. The latest stable release is **GeOxygene 1.5**.
 
 All releases can be obtained from the `SourceForge download area <http://sourceforge.net/projects/oxygene-project/files/?source=navbar>`_ .
-Snapshots and releases are also available from the `COGIT repositories <https://cogit-services.ign.fr/nexus-webapp-1.4.1/index.html>`_.
+Snapshots and releases are also available from the `COGIT repositories <https://forge-cogit.ign.fr/nexus/content/repositories/>`_.
 
 
 History of Changes

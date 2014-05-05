@@ -26,6 +26,11 @@ GeOxygene is an open source project made available to you using an open source l
 News
 ----------
 
+* June 5, 2014 - **CartAGen demonstration**
+
+    CartAGen is a component-based research platform dedicated to generalisation. It based on GeOxygene library. A demonstration entitled
+    *Multi-Agent Multi-Level Cartographic Generalisation in CartAGen* will be held at `PAAMS'14 <http://www.paams.net>`_
+
 * January, 2014 - **Version 1.6 released**
 
     This new version includes the EstIM model developed during the Jean-François Girres PhD (2012), a new OSM module,
