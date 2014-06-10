@@ -31,6 +31,12 @@ News
     CartAGen is a component-based research platform dedicated to generalisation. It based on GeOxygene library. A demonstration entitled
     *Multi-Agent Multi-Level Cartographic Generalisation in CartAGen* will be held at `PAAMS'14 <http://www.paams.net>`_
 
+* February 26, 2014 - **A presentation tools to estimate imprecision on geographical data**
+
+    Jean-François Girres intervention at *Géoséminaire* entitled `Fondements théoriques et méthodologiques de la qualification des données géographiques
+    <http://geoseminaire2014.teledetection.fr/index.php/programme/menu-downloads-presentations-2014/file/2-download-fondements-theoriques-et-methodologiques-de-la-qualification.html>`_ 
+    showcased tools developed in his thesis to estimate geometric measurements imprecision on geographical data.
+    
 * January, 2014 - **Version 1.6 released**
 
     This new version includes the EstIM model developed during the Jean-François Girres PhD (2012), a new OSM module,
@@ -67,28 +73,6 @@ News
     topoligical map and the data matching tool, and a complete Java 6 support in regard to
     Java 6 specifications (types, annotations, etc.).
 
-* January 31, 2008 - **Version 1.3 released**
-
-    This version provides a data matching tool.
-
-* August 8, 2007 - **Version 1.2 released**
-
-    This version provides new tools (topological map, geometric tools, Delaunay's triangulation)
-    and corrects some minor bugs.
-
-* September 12-15, 2006 - **GeOxygene will be at FOSS4G**
-
-    A technical workshop on GeOxygene is organised during the 4th edition of the Free and Open Source Software
-    for Geoinformatics conference, `FOSS4G 2006 <http://www.foss4g2006.org/>`_, Lausanne, Switzerland,
-    September 12-15, 2006.
-
-* June 12, 2006 - **Version 1.1 released**
-
-    This version corrects some minor bugs and enhances the support of PostGIS.
-
-* May 8, 2005 - **GeOxygene 1.0 released**
-
-    After two years of development, testing and debug, version 1.0 of GeOxygene is released.
 
 
 

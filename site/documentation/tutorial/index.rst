@@ -9,8 +9,8 @@ Tutorial
    :maxdepth: 1
    
    
-   feature
    geometry
+   feature
    motif
    plugin
 
