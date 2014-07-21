@@ -42,7 +42,7 @@ Grands principes
         .. figure:: /documentation/resources/img/cartetopo/cartetopo-grand-principe.png
        
 
-Dans GeOxygene, les classes dite géographiques (qui héritent de « FT_Feature » :
+Dans GeOxygene, les classes dites géographiques (qui héritent de « FT_Feature » :
 routes, rivières…) ne sont pas structurées topologiquement. Ces classes
 géographiques, issues des bases de données utilisées ne portent pas ou peu de
 relations entre elles, et contiennent des objets de géométrie non typée : chaque objet
@@ -74,8 +74,8 @@ ensuite de coder tous les algorithmes dans ce schéma, sont multiples :
   noeud initial de type Noeud, et la fonction qui renvoie son noeud initial renvoie un
   objet correctement typé.
 - Les fonctions utilisant la topologie peuvent être codées de manière claire et
-  générique, et organisées logiquement. Un calcul de plus court chemin peut ainsi
-  être codée sur la carte topologique, et réutilisé par tous.
+  générique, et organisées logiquement. Un calcul de plus court chemin peut ainsi 
+  être codé sur la carte topologique, et réutilisé par tous.
 - L'API de la carte topologique est très compacte, assez intuitive, et reprend un
   mode de représentation classique de la topologie (l'ISO propose également un
   modèle de description de la topologie à travers les « TP_Object » ; ce modèle est
@@ -117,7 +117,7 @@ seule. Ainsi, à partir d'un noeud on peut retrouver :
 
 - soit tous les arcs entrants [resp. sortants] d'un noeud au sens de la géométrie
   (logique de stockage),
-- soit tous les arcs entrants [resp. sortants] d'un noeuds au sens de l'orientation
+- soit tous les arcs entrants [resp. sortants] d'un noeud au sens de l'orientation
   (logique de circulation),
 - soit tous les arcs en une fois (entrants et sortants).
 

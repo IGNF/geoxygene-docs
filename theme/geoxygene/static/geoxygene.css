@@ -90,6 +90,10 @@ ul.simple {
     padding-left: 20px;
 }
 
+ul.simple > li {
+	text-align:justify;
+}
+
 ul > ul {
 	list-style: none;
     padding-left: 20px;
