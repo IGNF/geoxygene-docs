@@ -19,7 +19,7 @@ Implémentation dans GeOxygene
 .. container:: centerside
   
    .. figure:: /documentation/resources/img/filter/DC_Filter.png
-      :width: 650px
+      :width: 950px
        
       Figure 1 : DC Filter dans GeOxygene
 

@@ -152,6 +152,14 @@ Schéma géographique : définitions
    Dans le cas où une métadonnée de structure est disponible (soit stockée quelque part soit donnée par l'utilisateur lors du chargement), 
    ce schéma contient aussi une référence vers le schéma conceptuel : le featureType correspondant au DefaultFeature.
 
+   .. container:: centerside
+  
+      .. figure:: /documentation/resources/img/feature/DC-Schema.png
+         :width: 550px
+       
+         Figure 3 : Diagramme de classes : Schema, Collection, DataSet et Population
+
+
 ..   *SchemaConceptuelJeu* : schéma conceptuel d'un jeu de données. Correspond à la notion "Application schema" dans les normes ISO, 
 ..   qui n'est pas définie par  un type de données formel. Nous définissons ici ce type comme un ensemble de classes et de 
 ..   relations (associations et héritage) comportant des proprietés (attributs, rôles, opérations) et des contraintes.
@@ -159,8 +167,8 @@ Schéma géographique : définitions
 ..   Attention dans GeoTools "schema" designe la structure d'un feature et non pas d'un jeu de données.
 
 
-Quelques lignes de code comme exemple
-**************************************
+Quelques exemples d'application
+************************************
 
 1. Afficher la valeur de l'attribut **OBJECTID** :
 

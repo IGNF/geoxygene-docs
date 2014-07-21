@@ -13,5 +13,6 @@ Tutorial
    feature
    filter
    motif
+   contour
    plugin
 
