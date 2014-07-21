@@ -33,7 +33,7 @@ Comme décrits dans les deux captures d’écran ci-dessous, cliquer :
          
       .. container:: centerside
      
-         .. figure:: /documentation/resources/img/install/Import_01.png
+         .. figure:: /documentation/resources/img/geoxygene/Import_01.png
             :width: 350px
        
             Figure 1 : Import Project
@@ -49,7 +49,7 @@ Comme décrits dans les deux captures d’écran ci-dessous, cliquer :
 
       .. container:: centerside
      
-         .. figure:: /documentation/resources/img/install/Import_02.png
+         .. figure:: /documentation/resources/img/geoxygene/Import_02.png
             :width: 350px
        
             Figure 2 : Check out Maven Projects from SCM
@@ -59,7 +59,7 @@ Comme décrits dans les deux captures d’écran ci-dessous, cliquer :
 
 .. container:: centerside
      
-   .. figure:: /documentation/resources/img/install/geoxygeneEtape3.png
+   .. figure:: /documentation/resources/img/geoxygene/geoxygeneEtape3.png
        
       Figure 3 : SCM URL for check out GeOxygene
 
@@ -85,7 +85,7 @@ Comme décrits dans les deux captures d’écran ci-dessous, cliquer :
    
       .. container:: centerside
      
-         .. figure:: /documentation/resources/img/install/geoxygeneEtape4.png
+         .. figure:: /documentation/resources/img/geoxygene/geoxygeneEtape4.png
             :width: 420px
        
             Figure 4 : Configure your import
@@ -131,7 +131,7 @@ Lancer un maven build manuellement. Pour cela :
     
   .. container:: centerside
      
-      .. figure:: /documentation/resources/img/install/geoxygeneRunEtape1.png
+      .. figure:: /documentation/resources/img/geoxygene/geoxygeneRunEtape1.png
          :width: 600px
           
          Figure 6
@@ -140,7 +140,7 @@ Lancer un maven build manuellement. Pour cela :
       
   .. container:: centerside
    
-      .. figure:: /documentation/resources/img/install/geoxygeneRunEtape2.png
+      .. figure:: /documentation/resources/img/geoxygene/geoxygeneRunEtape2.png
          :width: 350px
              
          Figure 7
@@ -159,7 +159,7 @@ Lancer un maven build manuellement. Pour cela :
   
   .. container:: centerside
      
-      .. figure:: /documentation/resources/img/install/geoxygeneRunEtape3.png
+      .. figure:: /documentation/resources/img/geoxygene/geoxygeneRunEtape3.png
          :width: 600px
              
          Figure 8
@@ -231,48 +231,9 @@ Suivez les mêmes étapes que la compilation du projet GeOxygene. Dans la nouvel
 
 Lancement des plugins Geoxygene d'OpenJump à partir d'Eclipse 
 =================================================================
-Cette méthode ne nécessite pas d'avoir installé OpenJump sur sa machine.
 
-1. Click droit dans l'explorateur d'Eclipse, puis "Run As", puis "Java Application"
+Le guide de lancement est décrit sur la : :ref:`page suivante <launchinggeox>`.
 
-2. Dans le premier onglet saisissez comme MainClass :
-
-   .. container:: chemin
-
-      com.vividsolutions.jump.workbench.JUMPWorkbench
-
-
-.. container:: centerside
-
-   .. figure:: /documentation/resources/img/geoxygene/LancerOJEclipse01.png
-      :width: 600px
-      
-
-3. Dans le second onglet, ajouter comme Program arguments de la ligne de commande :
-
-   .. container:: chemin
-
-      -properties ./src/main/resources/workbench-properties.xml
-      -I18n fr
-
-   
-.. container:: centerside
-   
-   .. figure:: /documentation/resources/img/geoxygene/LancerOJEclipse02.png
-      :width: 600px
-             
-
-4. Pour lancer les plugins "quality", ceux-ci nécessitent la librairie java3d. Une version des dll est stockée dans le module "geoxygene-sig3d".
-
-   Ajouter comme VM arguments de la ligne de commande :
-
-   .. container:: chemin
-
-      -Xmx1536M
-      -Djava.library.path=D:/Workspace/geoxygene/geoxygene-sig3d/lib/native_libraries/windows-i586/
-
-
-5. Clicker sur le bouton "Run" et openjump se lance, avec les plugins GeOxygene.
 
 
 

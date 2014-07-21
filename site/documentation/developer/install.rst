@@ -12,6 +12,8 @@ JAVA
 
 GeOxygene est un projet Open Source écrit en JAVA, il faut donc l'installation d'un **JDK** dont la version soit au moins supérieure à la version 6. 
 
+La version 8 n'a pas encore été testée, préférer une version 6 ou 7. 
+
 #. Télécharger cet environnement sur le site de Sun à l'adresse suivante :
 
    http://www.oracle.com/technetwork/java/javase/downloads/index.html
@@ -33,13 +35,13 @@ aujourd'hui pour les développements JAVA.
 Installation
 ================
 
-* Vous pouvez télécharger la dernière version d'Eclipse directement à partir des liens ci-dessous. Actuellement la dernière version est Kepler (4.3). 
+* Vous pouvez télécharger la dernière version d'Eclipse, Luna (4.4), directement à partir des liens ci-dessous :  
   
-============================================================================================================================================================================ ====================================================================================================================================================================================
-  `Windows 32-bit <http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/kepler/SR1/eclipse-standard-kepler-SR1-win32.zip>`_                    `Windows 64-bit <http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/kepler/SR1/eclipse-standard-kepler-SR1-win32-x86_64.zip>`_
-  `Mac OS X(Cocoa 32) <http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/kepler/SR1/eclipse-standard-kepler-SR1-macosx-cocoa.tar.gz>`_      `Mac OS X(Cocoa 64) <http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/kepler/SR1/eclipse-standard-kepler-SR1-macosx-cocoa-x86_64.tar.gz>`_
-  `Linux 32-bit <http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/kepler/SR1/eclipse-standard-kepler-SR1-linux-gtk.tar.gz>`_               `Linux 64-bit <http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/kepler/SR1/eclipse-standard-kepler-SR1-linux-gtk-x86_64.tar.gz>`_
-============================================================================================================================================================================ ====================================================================================================================================================================================
+====================================================================================================================================================================== ===========================================================================================================================================================================
+  `Windows 32-bit <https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/luna/R/eclipse-standard-luna-R-win32.zip>`_                    `Windows 64-bit <https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/luna/R/eclipse-standard-luna-R-win32-x86_64.zip>`_
+  `Mac OS X(Cocoa 32) <https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/luna/R/eclipse-standard-luna-R-macosx-cocoa.tar.gz>`_      `Mac OS X(Cocoa 64) <https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/luna/R/eclipse-standard-luna-R-macosx-cocoa-x86_64.tar.gz>`_
+  `Linux 32-bit <https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/luna/R/eclipse-standard-luna-R-linux-gtk.tar.gz>`_               `Linux 64-bit <https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/luna/R/eclipse-standard-luna-R-linux-gtk-x86_64.tar.gz>`_
+====================================================================================================================================================================== ===========================================================================================================================================================================
 
 * Décompresser le fichier téléchargé (Eclipse ne fournit pas d'installeur, juste un répertoire à dézipper).
 
@@ -76,7 +78,7 @@ Proxy
 ---------------
 
 Pour installer des mises à jour, de nouveaux plugins ou des extensions, il faut qu'Eclipse puisse accèder 
-au net pour pouvoir les télécharger.  Si vous êtes derrière un proxy, il vous faut configurer Eclipse afin qu'il en tienne compte.
+à internet pour pouvoir les télécharger.  Si vous êtes derrière un proxy, il vous faut configurer Eclipse afin qu'il en tienne compte.
 
 Pour ce faire, accéder au menu :
 
@@ -218,7 +220,7 @@ Eclipse Plugins
 *********************************
 
 Maintenant, Eclipse est prêt pour l'installation des plugins nécessaires à GeOxygene. 
-Vous aurez besoin des plugins Maven (m2eclipse) et subversion (subclipse). 
+Vous aurez besoin des plugins Subversion (subclipse) et Maven (m2eclipse). 
 
 Plugin Subclipse
 ======================
@@ -233,121 +235,75 @@ Subclipse est un plugin Eclipse permettant d'utiliser Subversion (SVN) directeme
 
 	     .. container:: chemin
 	
-	           Help >> Install New Software
+	           Help >> Eclipse Marketplace ...
+	           
+	     1. dans la zone de recherche, saisir **subclipse**
+	     
+	     2. clicker sur **go** afin de rechercher le plugin
+	     
+	     3. dans la liste des plugins, clicker sur **install** du plugin Subclipse 1.10.5
    
    .. container:: rightside     
        
        .. container:: centerside
 	      
-	      .. figure:: /documentation/resources/img/install/pluginInstall.png
+	      .. figure:: /documentation/resources/img/install/LunaSubclipse.png
 	         :width: 350px
 	      
-	         Figure 8 : Install new Software 
+	         Figure 8 : Subclipse 1.10.5 in Marketplace 
          
 .. container:: twocol
 
    .. container:: leftside
             
-      **Etape 2** : Cliquer sur **Add** afin d’ajouter le site de subeclipse dans la liste des sites de logiciels disponibles
+      **Etape 2** : Confirmer la sélection des composants à installer.
 
    .. container:: rightside     
    
       .. container:: centerside
       
-         .. figure:: /documentation/resources/img/install/pluginNewUrl.png
+         .. figure:: /documentation/resources/img/install/LunaSubclipse_02.png
             :width: 500px
        
-            Figure 9 : Add new update site  
+            Figure 9 : Confirm Selected Features  
 
 .. container:: twocol
 
    .. container:: leftside
+
+      **Etape 3** : Accepter les termes de la licence de subeclipse sur la page "Review Licences" et cliquer sur "Finish" pour commencer l'installation.
    
-      **Etape 3** : Saisir dans la boite de dialogue les informations décrites ci-dessous puis cliquer sur **OK**
-
-      .. container:: chemin
-
-         Name = Subclispe
-         
-         Location = 
-            http://subclipse.tigris.org/update_1.8.x
-
-   .. container:: rightside     
-   
+   .. container:: rightside
+      
       .. container:: centerside
       
-         .. figure:: /documentation/resources/img/install/subeclipseUrl.png
+         .. figure:: /documentation/resources/img/install/LunaSubclipse_03.png
             :width: 450px
          
-            Figure 10 : Subclipse update site
-
-.. container:: twocol
-
-   .. container:: leftside
-
-      **Etape 4** : La boite de dialogue **install** affiche l'ensemble des plugins disponibles. Tout n’est pas utile, mais cocher au moins les packages 
-      marqués required ainsi que SVNKit puis cliquer sur **Next**.
-   
-   .. container:: rightside
-      
-      .. container:: centerside
-      
-         .. figure:: /documentation/resources/img/install/subeclipseEtape1.png
-            :width: 450px
-         
-            Figure 11 : Plugins Subclipse disponibles
+            Figure 10 : Review Licenses
    
 .. container:: twocol
    
    .. container:: leftside
    
-      **Etape 5** : Sur la page "Install Details" cliquer juste sur le bouton "Next"
-   
-   .. container:: rightside
-      
-      .. container:: centerside
-      
-         .. figure:: /documentation/resources/img/install/subeclipseEtape2.png
-            :width: 350px
-         
-            Figure 12
-         
-.. container:: twocol
-
-   .. container:: leftside
-   
-      **Etape 6** : Accepter les termes de la licence de subeclipse sur la page "Review Licences" et cliquer sur "Finish" pour commencer l'installation.
-   
-   .. container:: rightside
-      
-      .. container:: centerside
-      
-         .. figure:: /documentation/resources/img/install/subeclipseEtape3.png
-            :width: 350px
-
-            Figure 13
-
-.. container:: twocol
-
-   .. container:: leftside
-   
-      **Etape 7** : Vous allez recevoir un message d'alerte "Security Warning" parce que les jars de subeclipse 
+      **Etape 4** : Vous allez recevoir un message d'alerte "Security Warning" parce que les jars de subeclipse 
       ne sont pas signés. Cliquer sur "OK" pour continuer l'installation.
    
    .. container:: rightside
       
       .. container:: centerside
       
-         .. figure:: /documentation/resources/img/install/pluginNonSigne.png
+         .. figure:: /documentation/resources/img/install/LunaSubclipse_04.png
             :width: 350px
-
-            Figure 14
+         
+            Figure 11 : Security warning
+         
 
 .. container:: twocol
 
    .. container:: leftside
    
-      **Etape 8** : Une fois l'installation terminée, préférer "Restart Now" dans la prochaine boite de dialogue. 
+      **Etape 5** : Une fois l'installation terminée, préférer "Restart Now" dans la prochaine boite de dialogue. 
       
       Le plugin subeclipse sera opérationnel après le redémarrage d'Eclipse.
    
@@ -358,13 +314,13 @@ Subclipse est un plugin Eclipse permettant d'utiliser Subversion (SVN) directeme
          .. figure:: /documentation/resources/img/install/pluginRestart.png
             :width: 350px
 
-            Figure 15
+            Figure 12 : Restart
 
 .. container:: twocol
 
    .. container:: leftside
    
-      **Etape 9** : Une fois le plugin installé, configurer dans Eclipse l'interface **SVNKit**. 
+      **Etape 6** : Une fois le plugin installé, configurer dans Eclipse l'interface **SVNKit**. 
       En effet, celle-ci semble mieux fonctionner que celle par défaut (JavaHL). 
       Pour cela, dans le menu d'Eclipse :
       
@@ -381,7 +337,7 @@ Subclipse est un plugin Eclipse permettant d'utiliser Subversion (SVN) directeme
          .. figure:: /documentation/resources/img/install/subeclipseInterface.png
             :width: 450px
 
-            Figure 16
+            Figure 13 : SVN interface
 
 
 Plugin M2E
@@ -390,81 +346,158 @@ GeOxygene est construit à partir de Maven. Le projet m2eclipse fournit un suppo
 dans l'éditeur Eclipse. L'intégration Maven pour Eclipse est composé d'un plugin (le core) et de connectors. 
 Pour installer GeOxygene il faut le plugin et le connector subclipse.
 
-Reprener les 8 premières étapes de l'installation du plugin subclipse mais en adaptant les paramètres pour le plugin m2e.
+.. container:: twocol
 
+   .. container:: leftside
 
-**A l'étape 3** saisir comme URL :
-      
-.. container:: chemin
+      **Etape 1** : Cliquer dans le menu d'Eclipse :
 
-   Name = m2eclipse
-         
-   Location = http://download.eclipse.org/technology/m2e/releases 
+	     .. container:: chemin
+	
+	           Help >> Eclipse Marketplace ...
+	           
+	     1. dans la zone de recherche, saisir **maven**
+	     
+	     2. clicker sur **go** afin de rechercher le plugin
+	     
+	     3. dans la liste des plugins, clicker sur **install** du plugin Maven Integration for Eclipse(Luna) 1.5.0
    
-.. container:: centerside
+   .. container:: rightside     
+       
+       .. container:: centerside
+	      
+	      .. figure:: /documentation/resources/img/install/LunaM2Eclipse.png
+	         :width: 350px
+	      
+	         Figure 14 : Maven Integration for Eclipse(Luna) 1.5.0 
+
+
+.. container:: twocol
+
+   .. container:: leftside
+            
+      **Etape 2** : Confirmer la sélection de l'unique composant "Maven Integration for Eclipse" à installer. 
+
+   .. container:: rightside     
+   
+      .. container:: centerside
       
-   .. figure:: /documentation/resources/img/install/m2eclipseUrl.png
-      :width: 450px
+         .. figure:: /documentation/resources/img/install/LunaM2Eclipse_02.png
+            :width: 500px
+       
+            Figure 15 : Confirm Selected Features  
 
-      Figure 17 - m2eclipse update site
 
+.. container:: twocol
 
-**A l'étape 4** choisir l'unique composant "Maven Integration for Eclipse".
+   .. container:: leftside
+
+      **Etape 3** : Accepter les termes de la licence de m2eclipse sur la page "Review Licences" et cliquer sur "Finish" pour commencer l'installation.
+   
+   .. container:: rightside
       
-.. container:: centerside
+      .. container:: centerside
       
-   .. figure:: /documentation/resources/img/install/m2eclipseEtape1.png
-      :width: 450px
+         .. figure:: /documentation/resources/img/install/LunaM2Eclipse_03.png
+            :width: 450px
+         
+            Figure 16 : Review Licenses
+            
+            
+.. container:: twocol
 
-      Figure 18 - Plugins m2eclipse disponibles
+   .. container:: leftside
+   
+      **Etape 4** : Une fois l'installation terminée, préférer "Restart Now" dans la prochaine boite de dialogue. 
+      
+      Le plugin m2eclipse sera opérationnel après le redémarrage d'Eclipse.
+   
+   .. container:: rightside
+      
+      .. container:: centerside
+      
+         .. figure:: /documentation/resources/img/install/pluginRestart.png
+            :width: 350px
 
+            Figure 17 : Restart
 
-**A l'étape 8**, une fois l'installation terminée, une fenêtre propose de redémarrer Eclipse, inutile de le faire à ce stade.
 
 
 Connector Subclipse for Maven
 ========================================
 
-Il reste à installer le connector subclipse pour Maven.
+Il reste à installer le connector subclipse pour Maven. 
 
-.. container:: twocol
+**Attention** : le connector n'est pas à jour dans le catalogue du Marketplace d'Eclipse.
 
-   .. container:: leftside
-   
-      **Etape 1** Ouvrez le catalogue à partir du menu :
+
+#. Télécharger le fichier suivant et décompresser-le dans un répertoire sur votre disque local.
       
-      .. container:: chemin
+   .. container:: chemin
       
-         Window >> Preferences >> Maven >> Discovery
+      http://oxygene-project.sourceforge.net/m2e-subclipse/org.sonatype.m2e.subclipse.feature-0.13.0-SNAPSHOT-site.zip
          
       
-      Et cliquer sur **Open Catalog**
-      
-   .. container:: rightside
-      
-      .. container:: centerside
-      
-         .. figure:: /documentation/resources/img/install/connector_subclipse03.png
-            :width: 450px
-
-            Figure 19 : Maven catalog 
-
-.. container:: twocol
-
-   .. container:: leftside
+#. Dans Eclipse :
    
-      .. container:: centerside
-         
-         .. figure:: /documentation/resources/img/install/connector_subclipse02.png
-            :width: 450px
- 
-            Figure 20 : Maven catalog
-      
-   .. container:: rightside-marge
-       
-       **Etape 2** chercher le connector **m2e-subclipse** et l'installer
-      
-          
+   .. container:: twocol
+
+	   .. container:: leftside
+	
+	      Dans le menu d'Eclipse, aller à :
+	
+		     .. container:: chemin
+		
+		           Help >> Install New Software
+	   
+	   .. container:: rightside     
+	       
+	       .. container:: centerside
+		      
+		      .. figure:: /documentation/resources/img/install/pluginInstall.png
+		         :width: 350px
+		      
+		         Figure 18 : Install new Software 
+   
+   
+  
+   .. container:: twocol
+
+	   .. container:: leftside
+	            
+	      Cliquer sur **Add ...** 
+	
+	   .. container:: rightside     
+	   
+	      .. container:: centerside
+	      
+	         .. figure:: /documentation/resources/img/install/pluginNewUrl.png
+	            :width: 500px
+	       
+	            Figure 19 : Add new update site 
+
+
+   .. container:: twocol
+
+	   .. container:: leftside
+	            
+	      Cliquer dans la boite de dialogue sur **Local ...** et choisir le répertoire où a été dézippé le fichier téléchargé précédement.  
+	      
+	   .. container:: rightside     
+	   
+	      .. container:: centerside
+	      
+	         .. figure:: /documentation/resources/img/install/ConnectorM2eSubclipse.png
+	            :width: 500px
+	       
+	            Figure 20 : Add new local site
+	            
+        
+   .. container:: centerside
+
+	  Cliquer sur **OK**, cocher le composant à installer et finir l'installation comme habituellement (securité, licenses, ...).
+	
+	      
 
 Maven preferences
 ********************

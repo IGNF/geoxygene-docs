@@ -23,6 +23,7 @@ GeOxygene is an open source project made available to you using an open source l
 .. geographic information in `Oracle <http://www.oracle.com/>`_ or `PostGIS <http://postgis.refractions.net/>`_
 .. are provided to users.
 
+
 News
 ----------
 
@@ -65,14 +66,21 @@ News
      
     Technically, the project has adopted a new multi-module Maven architecture.
 
-* June 22, 2009 - **Version 1.4 released**
+.. * June 22, 2009 - **Version 1.4 released**
+.. This version provides an ISO1909 General Feature Model implementation, a SLD (Styled Layer Descriptor)
+..    implementation based on the OGC 02-070 implementation specification, an Hibernate support,
+..    a first version of the new GeOxygene interface, some code examples to learn how to use the
+..    topoligical map and the data matching tool, and a complete Java 6 support in regard to
+..    Java 6 specifications (types, annotations, etc.).
 
-    This version provides an ISO1909 General Feature Model implementation, a SLD (Styled Layer Descriptor)
-    implementation based on the OGC 02-070 implementation specification, an Hibernate support,
-    a first version of the new GeOxygene interface, some code examples to learn how to use the
-    topoligical map and the data matching tool, and a complete Java 6 support in regard to
-    Java 6 specifications (types, annotations, etc.).
 
+Screenshots
+--------------
+
+========================================================= =============================================== ==============================================================
+.. figure:: /screenshot/QUALITE-Estimation-Echelle.png     .. figure:: /screenshot/ecrangeoxygene1.png     .. figure:: /screenshot/interfacecartagen.png
+.. figure:: /screenshot/geoxygenegeopensim.png             .. figure:: /screenshot/geoxy_f2.jpg            .. figure:: /screenshot/bdtopo.jpg
+========================================================= =============================================== ==============================================================
 
 
 

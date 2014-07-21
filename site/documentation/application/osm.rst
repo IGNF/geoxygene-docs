@@ -30,7 +30,7 @@ en modifiant les fichiers sld présents dans le répertoire resources/sld.
 .. container:: centerside
      
    .. figure:: /documentation/resources/img/osm/Style_osm.png
-      :width: 690px
+      :width: 450px
        
       Figure 2 : OSM Style
 
@@ -156,7 +156,7 @@ du menu ajouté par le plugin OSM.
 .. container:: centerside
      
    .. figure:: /documentation/resources/img/osm/OsmTagBrowser.png
-      :width: 650px
+      :width: 500px
        
       Figure 6 : OSM Tag Browser
 

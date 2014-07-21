@@ -29,7 +29,7 @@ Lancement de l'interface graphique 2D depuis Eclipse
 
    .. container:: centerside
       
-      .. figure:: /documentation/resources/img/install/GeOxygeneAppliRunAs.png
+      .. figure:: /documentation/resources/img/launching/GeOxygeneAppliRunAs.png
          :width: 700px
        
          Figure 1 - Lancement de l'interface graphique 2D
@@ -46,7 +46,7 @@ Lancement de l'interface graphique 2D depuis Eclipse
 
   .. container:: centerside
      
-      .. figure:: /documentation/resources/img/install/GeOxygeneAppliRunAs02.png
+      .. figure:: /documentation/resources/img/launching/GeOxygeneAppliRunAs02.png
          :width: 700px
        
          Figure 2 - Lancement de l'interface graphique 2D
@@ -57,7 +57,7 @@ Lancement de l'interface graphique 2D depuis Eclipse
 
 .. container:: centerside
      
-    .. figure:: /documentation/resources/img/install/GeOxygene2D.png
+    .. figure:: /documentation/resources/img/launching/GeOxygene2D.png
        :width: 700px
        
        Figure 3 - Interface graphique GeOxygene 2D 
@@ -92,7 +92,7 @@ Lancement de l'interface graphique 3D
 
    .. container:: centerside
       
-      .. figure:: /documentation/resources/img/install/GeOxygene3DAppliRunAs.png
+      .. figure:: /documentation/resources/img/launching/GeOxygene3DAppliRunAs.png
          :width: 700px
        
          Figure 4 - Lancement de l'interface graphique 3D
@@ -104,13 +104,15 @@ Lancement de l'interface graphique 3D
   
      **VM arguments** : 
          
-         **Win (32bits)** : -Xms1156m -Xmx1156m -XX:PermSize=256m -XX:MaxPermSize=256m -Djava.library.path=./lib/native_libraries/windows-i586/
+         **Win (32bits)** : 
+               -Xms1156m -Xmx1156m -XX:PermSize=256m -XX:MaxPermSize=256m -Djava.library.path=./lib/native_libraries/windows-i586/
          
-         **Win (64bits)** : -Xms1156m -Xmx1156m -XX:PermSize=256m -XX:MaxPermSize=256m -Djava.library.path=./lib/native_libraries/windows-amd64/
+         **Win (64bits)** : 
+               -Xms1156m -Xmx1156m -XX:PermSize=256m -XX:MaxPermSize=256m -Djava.library.path=./lib/native_libraries/windows-amd64/
      
   .. container:: centerside
      
-      .. figure:: /documentation/resources/img/install/GeOxygene3DAppliRunAs02.png
+      .. figure:: /documentation/resources/img/launching/GeOxygene3DAppliRunAs02.png
          :width: 700px
        
          Figure 5 - Lancement de l'interface graphique 3D
@@ -121,13 +123,57 @@ Lancement de l'interface graphique 3D
 
 .. container:: centerside
      
-    .. figure:: /documentation/resources/img/install/GeOxygene3D.png
+    .. figure:: /documentation/resources/img/launching/GeOxygene3D.png
        :width: 600px
        
        Figure 6 - Interface graphique GeOxygene 3D
 
 
+Lancement des plugins Geoxygene dans OpenJump 
+***********************************************
 
+Cette méthode ne nécessite pas d'avoir installé OpenJump sur sa machine.
+
+1. Click droit dans l'explorateur d'Eclipse, puis "Run As", puis "Java Application"
+
+2. Dans le premier onglet saisissez comme MainClass :
+
+   .. container:: chemin
+
+      com.vividsolutions.jump.workbench.JUMPWorkbench
+
+
+.. container:: centerside
+
+   .. figure:: /documentation/resources/img/launching/LancerOJEclipse01.png
+      :width: 600px
+      
+
+3. Dans le second onglet, ajouter comme Program arguments de la ligne de commande :
+
+   .. container:: chemin
+
+      -properties ./src/main/resources/workbench-properties.xml
+      -I18n fr
+
+   
+.. container:: centerside
+   
+   .. figure:: /documentation/resources/img/launching/LancerOJEclipse02.png
+      :width: 600px
+             
+
+4. Pour lancer les plugins "quality", ceux-ci nécessitent la librairie java3d. Une version des dll est stockée dans le module "geoxygene-sig3d".
+
+   Ajouter comme VM arguments de la ligne de commande :
+
+   .. container:: chemin
+
+      -Xmx1536M
+      -Djava.library.path=D:/Workspace/geoxygene/geoxygene-sig3d/lib/native_libraries/windows-i586/
+
+
+5. Clicker sur le bouton "Run" et openjump se lance, avec les plugins GeOxygene.
 
 
 

@@ -1,7 +1,7 @@
 .. _geoxlicense:
 
-Project License
-===================
+GeOxygene Licenses
+====================
 
 GeOxygene is distributed under the terms of the `LGPL (GNU Lesser General Public License) license <http://www.fsf.org/licensing/licenses/lgpl.html#SEC1>`_ 
 and under the terms of the `CeCILL-C license <http://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html>`_. Licenses are described below.

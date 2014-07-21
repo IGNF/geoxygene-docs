@@ -23,6 +23,13 @@ h1 {
     color: #11557C;
 }
 
+h2::before {
+  content: "๑";
+  padding-right: 5px;
+  color:#0257A6;
+  font-weight: normal;
+  font-size: 1em;
+}
 
 h2 {
     /*background: url(img/h2.png) repeat-x;
@@ -39,17 +46,20 @@ h2 {
 }
 
 h3 {
-  color: #0257B5;
-  border-bottom: 1px dotted #A0A0A0;
-  padding: 2px 2px 2px 0px;
+	font-size: 1.1em;
+	font-weight: bold;
+  	color: #0257B5;
+  	border-bottom: 1px dotted #A0A0A0;
+  	padding: 2px 2px 2px 0px;
 }
 
+
 h4 {
-  font-size: 1.0em;
+  font-size: 1em;
   color: #0257A6;
   border-bottom: 1px dotted #A0A0A0;
   /*border: none;*/
-  font-size: medium;
+  /*font-size: medium;*/
   font-weight: bold;
   padding-left: 12px;
   padding-bottom: 0px;
