@@ -36,7 +36,7 @@ All modules are presented here, functionalities and concepts.
   |                |                       |                                                                                      | :ref:`Style : motifs & poncifs <motif>`                |
   |                |                       | des normes OGC SLD (Styled Layer Descriptor) et SE (Symbology Encoding).             |                                                        |
   +                +-----------------------+--------------------------------------------------------------------------------------+--------------------------------------------------------+
-  |                |  geoxygene-filter     |  Le package filter permet de filtrer pour produire un nouveau jeu de résultats       |                                                        |
+  |                |  geoxygene-filter     |  Le package filter permet de filtrer pour produire un nouveau jeu de résultats       | :ref:`Expression de filtres <filtre>`                  |
   +                +-----------------------+--------------------------------------------------------------------------------------+--------------------------------------------------------+
   |                |  geoxygene-schemageo  | Schéma géographique des objets                                                       |                                                        |
   +----------------+-----------------------+--------------------------------------------------------------------------------------+--------------------------------------------------------+

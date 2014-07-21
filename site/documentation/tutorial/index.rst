@@ -11,6 +11,7 @@ Tutorial
    
    geometry
    feature
+   filter
    motif
    plugin
 
