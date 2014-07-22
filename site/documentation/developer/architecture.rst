@@ -32,9 +32,9 @@ All modules are presented here, functionalities and concepts.
   |                |                       | Chargement et export des données                                                     |                                                        |
   |                |  geoxygene-database   |                                                                                      |                                                        |
   +                +-----------------------+--------------------------------------------------------------------------------------+--------------------------------------------------------+
-  |                |  geoxygene-style      | Le package style permet de décrire des styles cartographiques dans le formalisme     |                                                        |
-  |                |                       |                                                                                      | :ref:`Style : motifs & poncifs <motif>`                |
-  |                |                       | des normes OGC SLD (Styled Layer Descriptor) et SE (Symbology Encoding).             |                                                        |
+  |                |  geoxygene-style      | Le package style permet de décrire des styles cartographiques dans le formalisme     | :ref:`Style : motifs & poncifs <motif>`                |
+  |                |                       |                                                                                      |                                                        |
+  |                |                       | des normes OGC SLD (Styled Layer Descriptor) et SE (Symbology Encoding).             | :ref:`Style : gestion des contours <contour>`          |
   +                +-----------------------+--------------------------------------------------------------------------------------+--------------------------------------------------------+
   |                |  geoxygene-filter     |  Le package filter permet de filtrer pour produire un nouveau jeu de résultats       | :ref:`Expression de filtres <filtre>`                  |
   +                +-----------------------+--------------------------------------------------------------------------------------+--------------------------------------------------------+

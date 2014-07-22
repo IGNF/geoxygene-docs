@@ -1,4 +1,4 @@
-.. _motif:
+.. _contour:
 
 
 :Author: Charlotte Hoarau
