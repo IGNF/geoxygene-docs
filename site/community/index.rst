@@ -11,4 +11,5 @@ About
    
    license
    release
+   news
    .. Project Team
