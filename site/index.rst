@@ -77,10 +77,11 @@ News
 Screenshots
 --------------
 
-========================================================= =============================================== ==============================================================
-.. figure:: /screenshot/QUALITE-Estimation-Echelle.png     .. figure:: /screenshot/ecrangeoxygene1.png     .. figure:: /screenshot/interfacecartagen.png
-.. figure:: /screenshot/geoxygenegeopensim.png             .. figure:: /screenshot/geoxy_f2.jpg            .. figure:: /screenshot/bdtopo.jpg
-========================================================= =============================================== ==============================================================
+========================================================= ============================================================= ==============================================================
+.. figure:: /screenshot/geox2D_ign_style.png               .. figure:: /screenshot/ecrangeoxygene1.png                   .. figure:: /screenshot/geox3d.png
+.. figure:: /screenshot/QUALITE-Estimation-Echelle.png     .. figure:: /screenshot/geoxygene_thematiqueSymbolizer.png    .. figure:: /screenshot/interfacecartagen.png
+.. figure:: /screenshot/geoxygenegeopensim.png             .. figure:: /screenshot/geoxy_f2.jpg                          .. figure:: /screenshot/bdtopo.jpg
+========================================================= ============================================================= ==============================================================
 
 
 
