@@ -35,13 +35,15 @@ aujourd'hui pour les développements JAVA.
 Installation
 ================
 
-* Vous pouvez télécharger la dernière version d'Eclipse, Luna (4.4), directement à partir des liens ci-dessous :  
+* Vous pouvez télécharger l'avant-dernière version d'Eclipse, Kepler(4-3), directement à partir des liens ci-dessous :  
   
-====================================================================================================================================================================== ===========================================================================================================================================================================
-  `Windows 32-bit <https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/luna/R/eclipse-standard-luna-R-win32.zip>`_                    `Windows 64-bit <https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/luna/R/eclipse-standard-luna-R-win32-x86_64.zip>`_
-  `Mac OS X(Cocoa 32) <https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/luna/R/eclipse-standard-luna-R-macosx-cocoa.tar.gz>`_      `Mac OS X(Cocoa 64) <https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/luna/R/eclipse-standard-luna-R-macosx-cocoa-x86_64.tar.gz>`_
-  `Linux 32-bit <https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/luna/R/eclipse-standard-luna-R-linux-gtk.tar.gz>`_               `Linux 64-bit <https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/luna/R/eclipse-standard-luna-R-linux-gtk-x86_64.tar.gz>`_
-====================================================================================================================================================================== ===========================================================================================================================================================================
+============================================================================================================================================================================ ====================================================================================================================================================================================
+  `Windows 32-bit <http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/kepler/SR1/eclipse-standard-kepler-SR1-win32.zip>`_                    `Windows 64-bit <http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/kepler/SR1/eclipse-standard-kepler-SR1-win32-x86_64.zip>`_
+  `Mac OS X(Cocoa 32) <http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/kepler/SR1/eclipse-standard-kepler-SR1-macosx-cocoa.tar.gz>`_      `Mac OS X(Cocoa 64) <http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/kepler/SR1/eclipse-standard-kepler-SR1-macosx-cocoa-x86_64.tar.gz>`_
+  `Linux 32-bit <http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/kepler/SR1/eclipse-standard-kepler-SR1-linux-gtk.tar.gz>`_               `Linux 64-bit <http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/kepler/SR1/eclipse-standard-kepler-SR1-linux-gtk-x86_64.tar.gz>`_
+============================================================================================================================================================================ ====================================================================================================================================================================================
+
+(Attention la dernière version d'Eclipse Luna (4-4) pose des difficultés dans la gestion des certifcats java).   
 
 * Décompresser le fichier téléchargé (Eclipse ne fournit pas d'installeur, juste un répertoire à dézipper).
 
@@ -506,15 +508,15 @@ Settings
 ============
 
 Si vous êtes derrière un proxy, la dernière étape consiste à configurer Maven pour utiliser le proxy. 
-Pour ce, il faut ajouter un fichier **settings.xml** à la racine de Maven. 
+Pour ce, il faut ajouter un fichier **settings.xml** à la racine de Maven (même niveau que le repository maven). 
 Ce répertoire est situé à l'endroit suivant :
 
   ==================  ========================================================
      PLATFORM           LOCAL REPOSITORY
   ==================  ========================================================
-     Windows XP:      :file:`C:\\Documents and Settings\\Augusta\\.m2\\repository`
-     Windows:         :file:`C:\\Users\\Augusta\\.m2\\repository`
-     Linux and Mac:   :file:`~/.m2/repository`
+     Windows XP:      :file:`C:\\Documents and Settings\\Augusta\\.m2\\`
+     Windows:         :file:`C:\\Users\\Augusta\\.m2\\`
+     Linux and Mac:   :file:`~/.m2/`
   ==================  ========================================================
 
 
