@@ -110,6 +110,13 @@ Schéma géographique : définitions
    Les attributs d'un Feature décrivent ses propriétés qualitatives et quantitatives. 
    
    Par exemple : classement_administratif, nb_voies, numéro, ...
+   
+   .. container:: centerside
+
+      .. figure:: /documentation/resources/img/feature/DC-Attribute.png
+         :width: 500px
+       
+         Figure 4 : DC - Attribute
 
 
 **4. FeatureCollection, Population, DataSet**
@@ -122,7 +129,7 @@ Schéma géographique : définitions
       .. figure:: /documentation/resources/img/feature/Collection.png
          :width: 550px
        
-         Figure 3 : Collection, DataSet et Population
+         Figure 5 : Collection, DataSet et Population
          
    
    La classe *DataSet* représente un jeu de données. Par exemple :
@@ -157,7 +164,7 @@ Schéma géographique : définitions
       .. figure:: /documentation/resources/img/feature/DC-Schema.png
          :width: 550px
        
-         Figure 3 : Diagramme de classes : Schema, Collection, DataSet et Population
+         Figure 6 : Diagramme de classes : Schema, Collection, DataSet et Population
 
 
 ..   *SchemaConceptuelJeu* : schéma conceptuel d'un jeu de données. Correspond à la notion "Application schema" dans les normes ISO, 

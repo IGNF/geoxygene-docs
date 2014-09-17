@@ -15,7 +15,7 @@ Developer Guide
    architecture
    
    
-   website
+   .. website
    .. test
    .. quickstart
    .. trucetastuce
