@@ -346,7 +346,7 @@ Plugin M2E
 =========================
 GeOxygene est construit à partir de Maven. Le projet m2eclipse fournit un support afin d'utiliser les fonctionnalités de Maven
 dans l'éditeur Eclipse. L'intégration Maven pour Eclipse est composé d'un plugin (le core) et de connectors. 
-Pour installer GeOxygene il faut le plugin et le connector subclipse.
+Pour installer GeOxygene il faut le plugin m2e et le connector subclipse.
 
 .. container:: twocol
 
@@ -385,16 +385,34 @@ Pour installer GeOxygene il faut le plugin et le connector subclipse.
       .. container:: centerside
       
          .. figure:: /documentation/resources/img/install/LunaM2Eclipse_02.png
-            :width: 500px
+            :width: 450px
        
             Figure 15 : Confirm Selected Features  
+
+
+
+.. container:: twocol
+
+   .. container:: leftside
+            
+      **Etape 3** : Afin que le plugin m2eclipse (1.5.2) soit compatible avec la version d'Eclipse Kepler, un message d'avertissement indique que certains composants vont peut-être être installés avec une version antérieure. 
+
+   .. container:: rightside     
+   
+      .. container:: centerside
+      
+         .. figure:: /documentation/resources/img/install/MavenConfigurationDowngrade.png
+            :width: 500px
+       
+            Figure 16 : Confirm Selected Features
+
 
 
 .. container:: twocol
 
    .. container:: leftside
 
-      **Etape 3** : Accepter les termes de la licence de m2eclipse sur la page "Review Licences" et cliquer sur "Finish" pour commencer l'installation.
+      **Etape 4** : Accepter les termes de la licence de m2eclipse sur la page "Review Licences" et cliquer sur "Finish" pour commencer l'installation.
    
    .. container:: rightside
       
@@ -403,14 +421,14 @@ Pour installer GeOxygene il faut le plugin et le connector subclipse.
          .. figure:: /documentation/resources/img/install/LunaM2Eclipse_03.png
             :width: 450px
          
-            Figure 16 : Review Licenses
+            Figure 17 : Review Licenses
             
             
 .. container:: twocol
 
    .. container:: leftside
    
-      **Etape 4** : Une fois l'installation terminée, préférer "Restart Now" dans la prochaine boite de dialogue. 
+      **Etape 5** : Une fois l'installation terminée, préférer "Restart Now" dans la prochaine boite de dialogue. 
       
       Le plugin m2eclipse sera opérationnel après le redémarrage d'Eclipse.
    
@@ -421,7 +439,7 @@ Pour installer GeOxygene il faut le plugin et le connector subclipse.
          .. figure:: /documentation/resources/img/install/pluginRestart.png
             :width: 350px
 
-            Figure 17 : Restart
+            Figure 18 : Restart
 
 
 
@@ -459,7 +477,7 @@ Il reste à installer le connector subclipse pour Maven.
 		      .. figure:: /documentation/resources/img/install/pluginInstall.png
 		         :width: 350px
 		      
-		         Figure 18 : Install new Software 
+		         Figure 19 : Install new Software 
    
    
   
@@ -476,7 +494,7 @@ Il reste à installer le connector subclipse pour Maven.
 	         .. figure:: /documentation/resources/img/install/pluginNewUrl.png
 	            :width: 500px
 	       
-	            Figure 19 : Add new update site 
+	            Figure 20 : Add new update site 
 
 
    .. container:: twocol
@@ -492,7 +510,7 @@ Il reste à installer le connector subclipse pour Maven.
 	         .. figure:: /documentation/resources/img/install/ConnectorM2eSubclipse.png
 	            :width: 500px
 	       
-	            Figure 20 : Add new local site
+	            Figure 21 : Add new local site
 	            
         
    .. container:: centerside
@@ -540,7 +558,7 @@ Afin de voir la javadoc ou les sources des dépendances de vos projets, sélecti
     .. figure:: /documentation/resources/img/install/MavenConfiguration.png
        :width: 500px
        
-       Figure 21 : Eclipse preferences pour Maven
+       Figure 22 : Eclipse preferences pour Maven
 
 
 Tout est en place pour l'installation de GeOxygene.
