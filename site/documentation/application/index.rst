@@ -1,8 +1,8 @@
 
-Application
-=======================
+Contributions
+==============
 
-.. sidebar:: Application
+.. sidebar:: Contributions
 
 .. toctree::
    :maxdepth: 1

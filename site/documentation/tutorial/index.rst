@@ -8,7 +8,7 @@ Tutorial
 .. toctree::
    :maxdepth: 1
    
-   
+   architecture
    geometry
    feature
    filter

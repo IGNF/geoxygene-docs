@@ -5,15 +5,12 @@ Installation de GeOxygene
 ##########################
 
 
-GeOxygene
-********************
-
 .. --------------------------------------------------------------------------------------------------------------
 ..   Third Part : GEOXYGENE
 .. --------------------------------------------------------------------------------------------------------------
 
 Importer le projet GeOxygene
-============================================
+*********************************
 
 Dans Eclipse la création d'un nouveau projet s'effectue via l'assistant "Import". 
 Celui-ci offre en effet une pléthore de modèles. Il suffit donc pour importer GeOxygene de choisir 
@@ -118,7 +115,7 @@ Comme décrits dans les deux captures d’écran ci-dessous, cliquer :
 
 
 Compilation
-==================
+***************
 
 Lancer un maven build manuellement. Pour cela :
 
@@ -171,7 +168,7 @@ Cette opération peut prendre un certain temps !
 
 
 Fichier de configuration des plugins
-========================================
+*******************************************
 
 Créer un fichier *geoxygene-configuration.xml* depuis le fichier template *geoxygene-appli/conf/geoxygene-configuration-template.xml* 
 et placez-le à la racine du module *geoxygene-appli* :
@@ -188,51 +185,11 @@ Ce fichier contient l'ensemble des plugins lancés au démarrage de l'applicatio
 
 
 Lancement des interfaces graphiques 
-=================================================================
+*****************************************
 Le guide de lancement des interfaces graphiques est décrit sur la : :ref:`page suivante <launchinggeox>`.
 
 
-Plugins GeOxygene pour OpenJump
-****************************************
 
-Les plugins GeOxygene pour OpenJump sont dans un module dédié et dans un projet différent de celui de GeOxygene.
-Ils ne nécessitent pas forcément l'installation du projet GeOxygene.
-
-Importer le projet GeOxygene-ojplugin
-=======================================
-Suivez les mêmes étapes que l'import du projet GeOxygene. En revanche, les URLS du serveur SVN sont à choisir parmi celles-ci :
-
-Si vous êtes enregistré sur `Sourceforge <http://sourceforge.net/>`_  et si vous avez des droits en tant que développeur ou administrateur sur le projet geoxygene : 
-
-.. container:: svnurl
-    
-   https://svn.code.sf.net/p/oxygene-project/code/main/trunk/geoxygene-extension/geoxygene-ojplugin/ 
-
-Sinon :
-
-.. container:: svnurl
-   
-   http://svn.code.sf.net/p/oxygene-project/code/main/trunk/geoxygene-extension/geoxygene-ojplugin/
-
-
-Compilation
-==============
-Suivez les mêmes étapes que la compilation du projet GeOxygene. Dans la nouvelle fenêtre "Run configuration" configurer :
-         
-  .. container:: field
-
-     **Name** : geoxygene-ojplugin
-        
-     **Base directory** : saisir le chemin d'installation de geoxygene-ojplugin 
-                              (c'est celui de votre Workspace auquel il faut ajouter geoxygene-ojplugin)
-         
-     **Goal** : clean install. Vous définissez la phase du cycle (clean, install, package, compile, test, site, ...)
-
-
-Lancement des plugins Geoxygene d'OpenJump à partir d'Eclipse 
-=================================================================
-
-Le guide de lancement est décrit sur la : :ref:`page suivante <launchinggeox>`.
 
 
 

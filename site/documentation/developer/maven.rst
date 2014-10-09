@@ -1,6 +1,8 @@
 
-Maven Developer
-#######################
+.. GeOxygene Library for Maven Developer
+
+Librairies GeOxygene (maven développeur)
+##########################################
 
 Project settings 
 ********************

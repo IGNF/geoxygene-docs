@@ -1,6 +1,6 @@
 
 Developer Guide
-=======================
+==================
 
 .. sidebar:: Developer Guide
 
@@ -11,11 +11,12 @@ Developer Guide
    install
    geoxygene
    launching
+   openjump
+   wps
    maven
-   architecture
+   website
    
    
-   .. website
    .. test
    .. quickstart
    .. trucetastuce
