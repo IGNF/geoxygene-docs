@@ -1,10 +1,31 @@
 .. _launchinggeox:
 
 Lancement des interfaces graphiques
-=====================================
+#######################################
 
 Lancement de l'interface graphique 2D depuis Eclipse 
 *****************************************************
+
+Fichier de configuration des plugins
+=======================================
+
+Créer un fichier *geoxygene-configuration.xml* depuis le fichier template *geoxygene-appli/conf/geoxygene-configuration-template.xml* 
+et placez-le à la racine du module *geoxygene-appli* :
+
+   .. container:: chemin
+        
+      E:\\Workspace\\GeOxygene >> copy geoxygene-appli/conf/geoxygene-configuration-template.xml geoxygene-appli/geoxygene-configuration.xml
+
+
+Ce fichier contient l'ensemble des plugins lancés au démarrage de l'application. Pour en ajouter ou supprimer il suffit de modifier ce nouveau fichier.
+
+   .. literalinclude:: /documentation/resources/code_src/geoxygene-configuration.xml
+           :language: xml
+
+
+Lancement
+===========
+
 1. Dans le menu, cliquer sur 
       
    .. container:: chemin

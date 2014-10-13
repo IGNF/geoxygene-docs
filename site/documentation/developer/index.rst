@@ -14,7 +14,7 @@ Developer Guide
    openjump
    wps
    maven
-   website
+   .. website
    
    
    .. test

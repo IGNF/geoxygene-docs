@@ -1,8 +1,6 @@
 
-.. GeOxygene Library for Maven Developer
-
-Librairies GeOxygene (maven développeur)
-##########################################
+GeOxygene Library for Maven Developer
+########################################
 
 Project settings 
 ********************

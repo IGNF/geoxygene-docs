@@ -1,8 +1,8 @@
 .. _download:
 
 
-Download
-================
+Download GeOxygene
+====================
 
 .. toctree::
    :maxdepth: 1

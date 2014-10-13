@@ -209,6 +209,48 @@ div.rightside-marge {
     vertical-align:top;
 }
 
+
+/** =================================== */
+/**     Tableau */
+
+.divTable {
+	display:  table;
+    width:auto;
+    background-color:#F0F0FF;
+    /*border:1px solid  #666666;
+    border-spacing:5px;*/	/*cellspacing:poor IE support for  this*/
+}
+
+p.tableau {
+    margin:8px;
+    clear:left;
+    height:100% !important; height:1em;
+    /*border: 1px solid #E0E0E0;*/
+}
+
+span.side1 {
+	width:200px;
+    display:inline;
+    float:left;
+    padding: 4px;
+    margin: 8px;
+    text-align:left;
+    vertical-align:middle;
+}
+span.side2 {
+	width:600px;
+    display:inline;
+    float:left;
+    padding: 4px;
+    margin: 8px;
+    text-align:left;
+    vertical-align:middle;
+}
+
+/** =================================== */
+
+
+
 div.body {
     margin: 0;
     padding: 0.5em 50px 20px 20px;
@@ -634,5 +676,29 @@ li.toctree-l2 {
 }
 
 li.toctree-l1 {
+	padding-top:8px;
 	padding-left:5px;
 }
+
+/** =====================================
+			Architecture
+======================================= */
+#circle circle {
+  fill: none;
+  pointer-events: all;
+}
+
+.group path {
+  fill-opacity: .5;
+}
+
+path.chord {
+  stroke: #000;
+  stroke-width: .25px;
+}
+
+#circle:hover path.fade {
+  display: none;
+}
+
+

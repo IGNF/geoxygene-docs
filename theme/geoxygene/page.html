@@ -24,6 +24,11 @@
 {%- endmacro %}
 
 {% block header %}
+
+{%- if pagename == "documentation/tutorial/architecture" %}
+	<script src="http://oxygene-project.sourceforge.net/js/d3_3_4_12/d3.js" type="text/javascript"></script>
+{%- endif %}
+
     <div class="header">
         <div class="wrap">
             <div id="logo"><a href="http://oxygene-project.sourceforge.net/">GeOxygene</a></div>

@@ -5,9 +5,14 @@ Site web GeOxygene
 Introduction
 **************
 
-Cette page est dédiée à ceux et celles qui voudraient enrichir ce site web de plus de documentation.
+Le site internet dédié au projet GeOxygene est consultable sur internet, à l'adresse suivante: 
+\href{http://oxygene-project.sourceforge.net/maven}{http://oxygene-project.sourceforge.net/maven}.
 
-  --> Droits commits + déploiement
+Il est généré automatiquement puis déployé sur internet à partir du code source du projet *geoxygene-docs*, 
+grâce à Sphinx. 
+
+
+
 
 
 
@@ -77,4 +82,14 @@ mvn compile
 
 == Mise en ligne du site internet ==
 
-Le site se met à jour via une connexion au serveur web à partir de FileZilla. La procédure est décrite [[Forge_GeOxygene_OpenSource | ici]].
+Le site se met à jour via une connexion au serveur web à partir de FileZilla. 
+La procédure est décrite [[Forge_GeOxygene_OpenSource | ici]].
+
+
+N.B.
+***********
+
+  --> Droits commits + déploiement
+  
+  
+/home/project-web/oxygene-project/htdocs
