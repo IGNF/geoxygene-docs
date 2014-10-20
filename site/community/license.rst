@@ -3,6 +3,9 @@
 GeOxygene Licenses
 ====================
 
+Source License
+^^^^^^^^^^^^^^^^^^^^
+
 GeOxygene is distributed under the terms of the `LGPL (GNU Lesser General Public License) license <http://www.fsf.org/licensing/licenses/lgpl.html#SEC1>`_ 
 and under the terms of the `CeCILL-C license <http://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html>`_. Licenses are described below.
 
@@ -11,9 +14,6 @@ A few modules contain code under a different license :
 * geoxygene-sig3d is under the terms of the `CeCILL-B <http://www.cecill.info/licences/Licence_CeCILL-B_V1-en.html>`_
 * geoxygene-ojplugin is under the terms of the `GPL <http://www.gnu.org/licenses/gpl-3.0.en.html>`_
 
-
-Source License
-^^^^^^^^^^^^^^^^^^^^
 
 **GNU Lesser General Public License**
 

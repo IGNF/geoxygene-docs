@@ -90,6 +90,12 @@ ul.simple {
     padding-left: 20px;
 }
 
+ul.simple ul {
+	list-style: disc;
+    list-style-type:circle;
+    /*padding-left: 20px;*/
+}
+
 ul.simple > li {
 	text-align:justify;
 }
@@ -201,10 +207,26 @@ div.rightside {
     vertical-align:top;
 }
 
+div.rightside-marge-gauche ul {
+}
+
+div.rightside-marge-gauche li.toctree-l1::before {
+    content: "๑";
+    padding-right: 5px;
+    color:#0257A6;
+}
+
 div.rightside-marge {
     margin-left: 425px;
     padding-top:50px;
     padding-left:48px;
+    text-align:justify;
+    vertical-align:top;
+}
+
+div.rightside-marge-gauche {
+    margin-left: 425px;
+    padding-left:100px;
     text-align:justify;
     vertical-align:top;
 }

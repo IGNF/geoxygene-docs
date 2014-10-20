@@ -38,7 +38,8 @@
 	</developers>
 
 	<properties>
-		<ant.target>full</ant.target>
+	   <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	   <ant.target>full</ant.target>
 	</properties>
 
 	<!-- =========================================================== -->
