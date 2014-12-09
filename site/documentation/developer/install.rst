@@ -1,18 +1,24 @@
-:Date: 11/2013
+:Date: 12/2014
 :Version: 0.6
 
 Installation des outils pour GeOxygene
 #######################################
 
-Cette page et la suivante ont pour objectif de guider le développeur dans son installation de la plateforme de développement de GeOxygene.
+Cette page a pour objectif de guider le développeur dans son installation de la plateforme de développement de GeOxygene.
   
   
 JAVA
 *********
 
-GeOxygene est un projet Open Source écrit en JAVA, il faut donc l'installation d'un **JDK** dont la version soit au moins supérieure à la version 6. 
+GeOxygene est un projet Open Source écrit en JAVA, il faut donc l'installation d'un **JDK**.
 
-La version 8 n'a pas encore été testée, préférer une version 6 ou 7. 
+.. note::
+
+  A compter de ce jour, GeOxygene passe en Java 1.7. La version 8 n'a pas encore été testée. 
+
+
+Installation
+================
 
 #. Télécharger cet environnement sur le site de Sun à l'adresse suivante :
 
@@ -23,6 +29,88 @@ La version 8 n'a pas encore été testée, préférer une version 6 ou 7.
    .. container:: chemin
    
       C:\\Program Files\\Java\\jdk1.7.0\\
+
+
+Certificate
+================
+
+Il faut définir certaines propriétés afin de pouvoir télécharger les librairies java depuis un serveur HTTPS. 
+
+La référence de cette approche est détaillée ici : http://maven.apache.org/guides/mini/guide-repository-ssl.html.
+
+* Obtention du certificat 
+
+**Méthode 1** : Télécharger le certificat depuis votre navigateur comme ceci : 
+
+.. container:: twocol
+
+   .. container:: leftside
+
+
+      1.1 Ouvrir votre navigateur et aller sur la page :
+
+          .. container:: svnurl
+    
+             https://forge-cogit.ign.fr/nexus/#welcome
+
+      1.2 Dans la barre de navigation, cliquer sur le cadenas
+
+      1.3 Cliquer sur "More informations"
+
+      1.4 Cliquer sur "Display certificate"
+
+      1.5 Cliquer sur "détails"
+
+      1.6 Cliquer sur "Export"
+
+      1.7 Sauvegarder votre certificat sur votre disque dur.  
+          Par exemple : **E:\\certificat\\forge-cogit.crt**
+
+   .. container:: rightside
+   
+      .. container:: centerside
+     
+             .. figure:: /documentation/resources/img/maven/CertificatJava.png
+                :width: 400px
+       
+                Figure 1 : Téléchargement du certificat
+
+**Méthode 2** : Si vous avez openssl d'installé
+
+   .. container:: chemin
+   
+      echo -n | openssl s_client -connect forge-cogit.ign.fr:443 | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' > forge-cogit.crt
+
+
+* La ligne de commande suivante va importer le certificat d'autorité dans un fichier trust.jks.
+
+   .. container:: chemin
+ 
+         keytool -v -alias mavensrv -import -file E:\\certificat\\forge-cogit.crt -keystore trust.jks
+   
+   .. container:: centerside
+   
+     .. figure:: /documentation/resources/img/maven/ConfigurerCertificat.png 
+        :width: 750px
+       
+        Figure 2 : Importer le certificat dans un trust store
+
+
+* Saisir un mot de passe, par exemple "leschiensaboient"
+
+* Accepter le certificat
+
+  .. container:: centerside
+   
+     .. figure:: /documentation/resources/img/maven/AccepterCertificat.png 
+        :width: 360px
+       
+        Figure 3 : Accepter le certificat
+
+
+* Les variables d'environnement vont être définies plus tard (Eclipse preferences >> JDK).
+
+
 
 
 Eclipse installation
@@ -65,15 +153,39 @@ Eclipse preferences
 JDK
 -------
 
-Configurer Eclipse pour qu'il exécute les programmes java avec un jdk et non pas un jre :
+* Configurer Eclipse pour qu'il exécute les programmes java avec un jdk et non pas un jre :
 
 .. container:: centerside
      
     .. figure:: /documentation/resources/img/install/JavaConfiguration.png
-       :width: 450px
+       :width: 600px
        
-       Figure 1 : Java configuration in Eclipse
+       Figure 4 : Java configuration in Eclipse
 
+
+* Définir les variables d'environnement permettant de télécharger les librairies java depuis un serveur https.
+
+Toujours dans :
+
+.. container:: chemin
+
+   Window >> Preferences >> Java >> Installed JRE >> 
+    
+
+Sélectionner le JDK utilisé par défaut et cliquer sur **Edit**. Ajouter la ligne suivante dans **Default VM arguments** en spécifiant bien le répertoire 
+où vous avez créé le fichier trust.jks et en remplaçant *leschiensaboient* par votre mot de passe.
+
+   .. container:: chemin
+
+      -Djavax.net.ssl.trustStore=E:\\certificat\\trust.jks -Djavax.net.ssl.trustStorePassword= -Djavax.net.ssl.keyStore=  -Djavax.net.ssl.keyStoreType=pkcs12 -Djavax.net.ssl.keyStorePassword=leschiensaboient
+
+
+   .. container:: centerside
+   
+     .. figure:: /documentation/resources/img/maven/CertificatVariableEnvironnement.png 
+        :width: 900px
+       
+        Figure 5 : Variables d'environnement 
 
 
 Proxy 
