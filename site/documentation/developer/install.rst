@@ -207,7 +207,7 @@ Vous pouvez alors séléctionner **Manual** comme **Active Provider**
     .. figure:: /documentation/resources/img/install/proxy3.png
        :width: 600px
        
-       Figure 2 : Eclipse - Network connections
+       Figure 6 : Eclipse - Network connections
        
 
 Selectionner "HTTP" dans la liste des entrées et cliquer sur le bouton "Edit". 
@@ -220,7 +220,7 @@ Ne remplisser pas les champs d'authentification.
      
     .. figure:: /documentation/resources/img/install/proxy1.png
        
-       Figure 3 : Edit proxy entry 
+       Figure 7 : Edit proxy entry 
 
 
 Encodage
@@ -240,7 +240,7 @@ et choisir UTF-8.
     .. figure:: /documentation/resources/img/install/encodage.png
        :width: 450px
        
-       Figure 4 : Eclipse - Encodage 
+       Figure 8 : Eclipse - Encodage 
 
 
 Code formatting
@@ -276,7 +276,7 @@ Cette norme est dérivée de celle proposée par SUN à l’adresse :
             .. figure:: /documentation/resources/img/install/ConfigEclipseConventionCodage_1.png
                :width: 400px
        
-               Figure 5 : Convention de codage - Import
+               Figure 9 : Convention de codage - Import
     
    
    .. container:: rightside
@@ -289,7 +289,7 @@ Cette norme est dérivée de celle proposée par SUN à l’adresse :
          .. figure:: /documentation/resources/img/install/ConfigEclipseConventionCodage_2.png
             :width: 500px
        
-            Figure 6 : Convention de codage - Active profile 
+            Figure 10 : Convention de codage - Active profile 
 
 
 Text editors
@@ -323,7 +323,7 @@ Text editors
            .. figure:: /documentation/resources/img/install/PreferencesTextEditor.png
               :width: 450px
                
-              Figure 7 : Eclipse preferences - Text editors  
+              Figure 11 : Eclipse preferences - Text editors  
 
 
 .. ???????????????????????????????????????????????????????????????????????????????????????????????????????????????????
@@ -364,7 +364,7 @@ Subclipse est un plugin Eclipse permettant d'utiliser Subversion (SVN) directeme
 	      .. figure:: /documentation/resources/img/install/LunaSubclipse.png
 	         :width: 350px
 	      
-	         Figure 8 : Subclipse 1.10.5 in Marketplace 
+	         Figure 12 : Subclipse 1.10.5 in Marketplace 
          
 .. container:: twocol
 
@@ -379,7 +379,7 @@ Subclipse est un plugin Eclipse permettant d'utiliser Subversion (SVN) directeme
          .. figure:: /documentation/resources/img/install/LunaSubclipse_02.png
             :width: 500px
        
-            Figure 9 : Confirm Selected Features  
+            Figure 13 : Confirm Selected Features  
 
 .. container:: twocol
 
@@ -394,7 +394,7 @@ Subclipse est un plugin Eclipse permettant d'utiliser Subversion (SVN) directeme
          .. figure:: /documentation/resources/img/install/LunaSubclipse_03.png
             :width: 450px
          
-            Figure 10 : Review Licenses
+            Figure 14 : Review Licenses
    
 .. container:: twocol
    
@@ -410,7 +410,7 @@ Subclipse est un plugin Eclipse permettant d'utiliser Subversion (SVN) directeme
          .. figure:: /documentation/resources/img/install/LunaSubclipse_04.png
             :width: 350px
          
-            Figure 11 : Security warning
+            Figure 15 : Security warning
          
 
 .. container:: twocol
@@ -428,7 +428,7 @@ Subclipse est un plugin Eclipse permettant d'utiliser Subversion (SVN) directeme
          .. figure:: /documentation/resources/img/install/pluginRestart.png
             :width: 350px
 
-            Figure 12 : Restart
+            Figure 16 : Restart
 
 .. container:: twocol
 
@@ -451,7 +451,7 @@ Subclipse est un plugin Eclipse permettant d'utiliser Subversion (SVN) directeme
          .. figure:: /documentation/resources/img/install/subeclipseInterface.png
             :width: 450px
 
-            Figure 13 : SVN interface
+            Figure 17 : SVN interface
 
 
 Plugin M2E
@@ -483,7 +483,7 @@ Pour installer GeOxygene il faut le plugin m2e et le connector subclipse.
 	      .. figure:: /documentation/resources/img/install/LunaM2Eclipse.png
 	         :width: 350px
 	      
-	         Figure 14 : Maven Integration for Eclipse(Luna) 1.5.0 
+	         Figure 18 : Maven Integration for Eclipse(Luna) 1.5.0 
 
 
 .. container:: twocol
@@ -499,7 +499,7 @@ Pour installer GeOxygene il faut le plugin m2e et le connector subclipse.
          .. figure:: /documentation/resources/img/install/LunaM2Eclipse_02.png
             :width: 450px
        
-            Figure 15 : Confirm Selected Features  
+            Figure 19 : Confirm Selected Features  
 
 
 
@@ -516,7 +516,7 @@ Pour installer GeOxygene il faut le plugin m2e et le connector subclipse.
          .. figure:: /documentation/resources/img/install/MavenConfigurationDowngrade.png
             :width: 500px
        
-            Figure 16 : Confirm Selected Features
+            Figure 20 : Confirm Selected Features
 
 
 
@@ -533,7 +533,7 @@ Pour installer GeOxygene il faut le plugin m2e et le connector subclipse.
          .. figure:: /documentation/resources/img/install/LunaM2Eclipse_03.png
             :width: 450px
          
-            Figure 17 : Review Licenses
+            Figure 21 : Review Licenses
             
             
 .. container:: twocol
@@ -551,7 +551,7 @@ Pour installer GeOxygene il faut le plugin m2e et le connector subclipse.
          .. figure:: /documentation/resources/img/install/pluginRestart.png
             :width: 350px
 
-            Figure 18 : Restart
+            Figure 22 : Restart
 
 
 
@@ -589,7 +589,7 @@ Il reste à installer le connector subclipse pour Maven.
 		      .. figure:: /documentation/resources/img/install/pluginInstall.png
 		         :width: 350px
 		      
-		         Figure 19 : Install new Software 
+		         Figure 23 : Install new Software 
    
    
   
@@ -606,7 +606,7 @@ Il reste à installer le connector subclipse pour Maven.
 	         .. figure:: /documentation/resources/img/install/pluginNewUrl.png
 	            :width: 500px
 	       
-	            Figure 20 : Add new update site 
+	            Figure 24 : Add new update site 
 
 
    .. container:: twocol
@@ -622,7 +622,7 @@ Il reste à installer le connector subclipse pour Maven.
 	         .. figure:: /documentation/resources/img/install/ConnectorM2eSubclipse.png
 	            :width: 500px
 	       
-	            Figure 21 : Add new local site
+	            Figure 25 : Add new local site
 	            
         
    .. container:: centerside
@@ -670,7 +670,7 @@ Afin de voir la javadoc ou les sources des dépendances de vos projets, sélecti
     .. figure:: /documentation/resources/img/install/MavenConfiguration.png
        :width: 500px
        
-       Figure 22 : Eclipse preferences pour Maven
+       Figure 26 : Eclipse preferences pour Maven
 
 
 Tout est en place pour l'installation de GeOxygene.
