@@ -52,6 +52,7 @@
 		<plugins>
 			<plugin>
 				<artifactId>maven-antrun-plugin</artifactId>
+				<version>1.8</version>
 				<dependencies>
 					<dependency>
 						<groupId>ant</groupId>
