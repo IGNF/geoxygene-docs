@@ -9,7 +9,7 @@ Component Architecture
 
 .. container:: centerside
      
-    .. figure:: /documentation/resources/img/architecture/ArchitectureGeoxygene_01.png
+    .. figure:: /documentation/resources/img/architecture/ArchitectureGeoxygene_02.png
        :width: 750px
        
        Figure 1 : GeOxygene Architecture

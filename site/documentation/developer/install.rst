@@ -6,15 +6,20 @@ Installation des outils pour GeOxygene
 
 Cette page a pour objectif de guider le développeur dans son installation de la plateforme de développement de GeOxygene.
   
+
+.. note::
+
+  A compter de ce jour, GeOxygene passe en Java 1.7, la version 8 n'a pas encore été testée ni approuvée.
+  
+  Eclipse Luna est recommandé avec les plugins subclipse (1.10.8) et m2 (1.5.0)
+  
+  Attention : le connector subclipse pour Maven doit être installé à la main comme indiqué plus bas et non pas via le marketplace
+
   
 JAVA
 *********
 
 GeOxygene est un projet Open Source écrit en JAVA, il faut donc l'installation d'un **JDK**.
-
-.. note::
-
-  A compter de ce jour, GeOxygene passe en Java 1.7. La version 8 n'a pas encore été testée. 
 
 
 Installation
@@ -38,9 +43,9 @@ Il faut définir certaines propriétés afin de pouvoir télécharger les librai
 
 La référence de cette approche est détaillée ici : http://maven.apache.org/guides/mini/guide-repository-ssl.html.
 
-* Obtention du certificat 
+1. Obtention du certificat 
 
-**Méthode 1** : Télécharger le certificat depuis votre navigateur comme ceci : 
+Télécharger le certificat depuis votre navigateur comme ceci : 
 
 .. container:: twocol
 
@@ -75,14 +80,8 @@ La référence de cette approche est détaillée ici : http://maven.apache.org/g
        
                 Figure 1 : Téléchargement du certificat
 
-**Méthode 2** : Si vous avez openssl d'installé
 
-   .. container:: chemin
-   
-      echo -n | openssl s_client -connect forge-cogit.ign.fr:443 | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' > forge-cogit.crt
-
-
-* La ligne de commande suivante va importer le certificat d'autorité dans un fichier trust.jks.
+2. La ligne de commande suivante va importer le certificat d'autorité dans un fichier trust.jks.
 
    .. container:: chemin
  
@@ -96,9 +95,9 @@ La référence de cette approche est détaillée ici : http://maven.apache.org/g
         Figure 2 : Importer le certificat dans un trust store
 
 
-* Saisir un mot de passe, par exemple "leschiensaboient"
+3. Saisir un mot de passe, par exemple "leschiensaboient"
 
-* Accepter le certificat
+4. Accepter le certificat
 
   .. container:: centerside
    
@@ -108,7 +107,7 @@ La référence de cette approche est détaillée ici : http://maven.apache.org/g
         Figure 3 : Accepter le certificat
 
 
-* Les variables d'environnement vont être définies plus tard (Eclipse preferences >> JDK).
+5. Les variables d'environnement vont être définies plus tard (Eclipse preferences >> JDK).
 
 
 
@@ -124,12 +123,13 @@ Installation
 ================
 
 * Vous pouvez télécharger l'avant-dernière version d'Eclipse, Kepler(4-3), directement à partir des liens ci-dessous :  
+
+====================================================================================================================================================================== ===========================================================================================================================================================================
+  `Windows 32-bit <https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/luna/R/eclipse-standard-luna-R-win32.zip>`_                    `Windows 64-bit <https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/luna/R/eclipse-standard-luna-R-win32-x86_64.zip>`_
+  `Mac OS X(Cocoa 32) <https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/luna/R/eclipse-standard-luna-R-macosx-cocoa.tar.gz>`_      `Mac OS X(Cocoa 64) <https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/luna/R/eclipse-standard-luna-R-macosx-cocoa-x86_64.tar.gz>`_
+  `Linux 32-bit <https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/luna/R/eclipse-standard-luna-R-linux-gtk.tar.gz>`_               `Linux 64-bit <https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/luna/R/eclipse-standard-luna-R-linux-gtk-x86_64.tar.gz>`_
+====================================================================================================================================================================== ===========================================================================================================================================================================
   
-============================================================================================================================================================================ ====================================================================================================================================================================================
-  `Windows 32-bit <http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/kepler/SR1/eclipse-standard-kepler-SR1-win32.zip>`_                    `Windows 64-bit <http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/kepler/SR1/eclipse-standard-kepler-SR1-win32-x86_64.zip>`_
-  `Mac OS X(Cocoa 32) <http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/kepler/SR1/eclipse-standard-kepler-SR1-macosx-cocoa.tar.gz>`_      `Mac OS X(Cocoa 64) <http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/kepler/SR1/eclipse-standard-kepler-SR1-macosx-cocoa-x86_64.tar.gz>`_
-  `Linux 32-bit <http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/kepler/SR1/eclipse-standard-kepler-SR1-linux-gtk.tar.gz>`_               `Linux 64-bit <http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/kepler/SR1/eclipse-standard-kepler-SR1-linux-gtk-x86_64.tar.gz>`_
-============================================================================================================================================================================ ====================================================================================================================================================================================
 
 (Attention la dernière version d'Eclipse Luna (4-4) pose des difficultés dans la gestion des certifcats java).   
 
@@ -355,7 +355,7 @@ Subclipse est un plugin Eclipse permettant d'utiliser Subversion (SVN) directeme
 	     
 	     2. clicker sur **go** afin de rechercher le plugin
 	     
-	     3. dans la liste des plugins, clicker sur **install** du plugin Subclipse 1.10.5
+	     3. dans la liste des plugins, clicker sur **install** du plugin Subclipse 1.10.8
    
    .. container:: rightside     
        
@@ -364,7 +364,7 @@ Subclipse est un plugin Eclipse permettant d'utiliser Subversion (SVN) directeme
 	      .. figure:: /documentation/resources/img/install/LunaSubclipse.png
 	         :width: 350px
 	      
-	         Figure 12 : Subclipse 1.10.5 in Marketplace 
+	         Figure 12 : Subclipse 1.10.8 in Marketplace 
          
 .. container:: twocol
 
@@ -502,24 +502,6 @@ Pour installer GeOxygene il faut le plugin m2e et le connector subclipse.
             Figure 19 : Confirm Selected Features  
 
 
-
-.. container:: twocol
-
-   .. container:: leftside
-            
-      **Etape 3** : Afin que le plugin m2eclipse (1.5.2) soit compatible avec la version d'Eclipse Kepler, un message d'avertissement indique que certains composants vont peut-être être installés avec une version antérieure. 
-
-   .. container:: rightside     
-   
-      .. container:: centerside
-      
-         .. figure:: /documentation/resources/img/install/MavenConfigurationDowngrade.png
-            :width: 500px
-       
-            Figure 20 : Confirm Selected Features
-
-
-
 .. container:: twocol
 
    .. container:: leftside
@@ -533,7 +515,7 @@ Pour installer GeOxygene il faut le plugin m2e et le connector subclipse.
          .. figure:: /documentation/resources/img/install/LunaM2Eclipse_03.png
             :width: 450px
          
-            Figure 21 : Review Licenses
+            Figure 20 : Review Licenses
             
             
 .. container:: twocol
@@ -551,14 +533,14 @@ Pour installer GeOxygene il faut le plugin m2e et le connector subclipse.
          .. figure:: /documentation/resources/img/install/pluginRestart.png
             :width: 350px
 
-            Figure 22 : Restart
+            Figure 21 : Restart
 
 
 
 Connector Subclipse for Maven
 ========================================
 
-Il reste à installer le connector subclipse pour Maven. 
+Il faut installer le connector subclipse pour Maven. 
 
 **Attention** : le connector n'est pas à jour dans le catalogue du Marketplace d'Eclipse.
 
@@ -589,7 +571,7 @@ Il reste à installer le connector subclipse pour Maven.
 		      .. figure:: /documentation/resources/img/install/pluginInstall.png
 		         :width: 350px
 		      
-		         Figure 23 : Install new Software 
+		         Figure 22 : Install new Software 
    
    
   
@@ -606,7 +588,7 @@ Il reste à installer le connector subclipse pour Maven.
 	         .. figure:: /documentation/resources/img/install/pluginNewUrl.png
 	            :width: 500px
 	       
-	            Figure 24 : Add new update site 
+	            Figure 23 : Add new update site 
 
 
    .. container:: twocol
@@ -622,13 +604,61 @@ Il reste à installer le connector subclipse pour Maven.
 	         .. figure:: /documentation/resources/img/install/ConnectorM2eSubclipse.png
 	            :width: 500px
 	       
-	            Figure 25 : Add new local site
+	            Figure 24 : Add new local site
 	            
         
    .. container:: centerside
 
 	  Cliquer sur **OK**, cocher le composant à installer et finir l'installation comme habituellement (securité, licenses, ...).
 	
+
+Connector *buildhelper* for Maven
+========================================	
+
+Le connecteur **buildhelper** doit aussi être installé. Il permet d'ajouter entre autres choses de nouveaux répertoires dans le classpath.  
+
+#. Aller dans le catalogue des connecteurs de Maven :
+      
+   .. container:: chemin
+      
+      Window >> Preferences >> Maven >> Discovery
+
+   Et cliquer sur **Open Catalog** 
+   
+   .. container:: centerside
+          
+             .. figure:: /documentation/resources/img/install/ConnectorBuildhelper.png
+                :width: 500px
+           
+                Figure 25 : Open Catalog
+   
+  
+#. Sélectionner le **buildhelper** connector
+	      
+   .. container:: centerside
+          
+      .. figure:: /documentation/resources/img/install/ConnectorBuildhelper_02.png
+         :width: 500px
+           
+         Figure 26 : buildhelper connector
+	      
+#. Installez le 
+
+    .. container:: centerside
+          
+     .. figure:: /documentation/resources/img/install/ConnectorBuildhelper_03.png
+        :width: 500px
+           
+        Figure 27 : buildhelper connector version
+	      
+	
+	.. container:: centerside
+          
+     .. figure:: /documentation/resources/img/install/ConnectorBuildhelper_04.png
+        :width: 500px
+           
+        Figure 28 : buildhelper connector : accept security warning
+	      
 	      
 
 Maven preferences
@@ -670,7 +700,7 @@ Afin de voir la javadoc ou les sources des dépendances de vos projets, sélecti
     .. figure:: /documentation/resources/img/install/MavenConfiguration.png
        :width: 500px
        
-       Figure 26 : Eclipse preferences pour Maven
+       Figure 29 : Eclipse preferences pour Maven
 
 
 Tout est en place pour l'installation de GeOxygene.
