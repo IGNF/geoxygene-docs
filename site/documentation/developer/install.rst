@@ -506,7 +506,7 @@ Pour installer GeOxygene il faut le plugin m2e et le connector subclipse.
 
    .. container:: leftside
 
-      **Etape 4** : Accepter les termes de la licence de m2eclipse sur la page "Review Licences" et cliquer sur "Finish" pour commencer l'installation.
+      **Etape 3** : Accepter les termes de la licence de m2eclipse sur la page "Review Licences" et cliquer sur "Finish" pour commencer l'installation.
    
    .. container:: rightside
       
@@ -522,7 +522,7 @@ Pour installer GeOxygene il faut le plugin m2e et le connector subclipse.
 
    .. container:: leftside
    
-      **Etape 5** : Une fois l'installation terminée, préférer "Restart Now" dans la prochaine boite de dialogue. 
+      **Etape 4** : Une fois l'installation terminée, préférer "Restart Now" dans la prochaine boite de dialogue. 
       
       Le plugin m2eclipse sera opérationnel après le redémarrage d'Eclipse.
    
@@ -642,7 +642,7 @@ Le connecteur **buildhelper** doit aussi être installé. Il permet d'ajouter en
            
          Figure 26 : buildhelper connector
 	      
-#. Installez le 
+#. C'est parti pour l'installation 
 
     .. container:: centerside
           
