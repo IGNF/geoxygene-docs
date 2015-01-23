@@ -664,28 +664,6 @@ Le connecteur **buildhelper** doit aussi être installé. Il permet d'ajouter en
 Maven preferences
 ********************
 
-Settings
-============
-
-Si vous êtes derrière un proxy, la dernière étape consiste à configurer Maven pour utiliser le proxy. 
-Pour ce, il faut ajouter un fichier **settings.xml** à la racine de Maven (même niveau que le repository maven). 
-Ce répertoire est situé à l'endroit suivant :
-
-  ==================  ========================================================
-     PLATFORM           LOCAL REPOSITORY
-  ==================  ========================================================
-     Windows XP:      :file:`C:\\Documents and Settings\\Augusta\\.m2\\`
-     Windows:         :file:`C:\\Users\\Augusta\\.m2\\`
-     Linux and Mac:   :file:`~/.m2/`
-  ==================  ========================================================
-
-
-Voici un exemplaire d'un fichier settings.xml que vous pouvez utiliser à l'IGN :
-
-.. literalinclude:: /documentation/resources/code_src/settings.xml
-        :language: xml
-        
-
 Eclipse Preferences for Maven
 =================================
 
@@ -706,7 +684,26 @@ Afin de voir la javadoc ou les sources des dépendances de vos projets, sélecti
 Tout est en place pour l'installation de GeOxygene.
 
 
+Settings
+============
 
+Si vous êtes derrière un proxy, la dernière étape consiste à configurer Maven pour utiliser le proxy. 
+Pour ce, il faut ajouter un fichier **settings.xml** à la racine de Maven (même niveau que le repository maven). 
+Ce répertoire est situé à l'endroit suivant :
+
+  ==================  ========================================================
+     PLATFORM           LOCAL REPOSITORY
+  ==================  ========================================================
+     Windows XP:      :file:`C:\\Documents and Settings\\Augusta\\.m2\\`
+     Windows:         :file:`C:\\Users\\Augusta\\.m2\\`
+     Linux and Mac:   :file:`~/.m2/`
+  ==================  ========================================================
+
+
+Voici un exemplaire d'un fichier settings.xml que vous pouvez utiliser à l'IGN :
+
+.. literalinclude:: /documentation/resources/code_src/settings.xml
+        :language: xml
 
 
 
