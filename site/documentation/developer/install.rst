@@ -9,11 +9,11 @@ Cette page a pour objectif de guider le développeur dans son installation de la
 
 .. note::
 
-  A compter de ce jour, GeOxygene passe en Java 1.7, la version 8 n'a pas encore été testée ni approuvée.
+  A compter de ce jour, GeOxygene passe en Java 1.7, la version java 1.8 n'a pas encore été testée ni approuvée.
   
   Eclipse Luna est recommandé avec les plugins subclipse (1.10.8) et m2 (1.5.0)
   
-  Attention : le connector subclipse pour Maven doit être installé à la main comme indiqué plus bas et non pas via le marketplace
+  **Attention** : le connector subclipse pour Maven doit être installé à la main comme indiqué plus bas et non pas via le marketplace
 
   
 JAVA
