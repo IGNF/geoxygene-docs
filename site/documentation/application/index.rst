@@ -13,3 +13,4 @@ Contributions
    3d
    topological-map
    data-matching
+   style-interpolation
