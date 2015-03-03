@@ -53,7 +53,7 @@ Current supported parameter list:
 * Opacity,
 * Width,
 * Cap and Join: use first style value when :math:`\alpha < 0.5`, and second one otherwise
-* Expressive Stroke: requires to use the same shader and identical parameter set (different value). Textures can be interpolated if they share the same color space.
+* Expressive Stroke: requires to use the same shader and identical parameter set (different value). Textures can be interpolated if they share the same color space. GL viewer is required.
 
 Example basic stroke
 ====================
@@ -85,9 +85,11 @@ The syntax used to describe expressive strokes is not stable yet. However, in th
 
 .. figure:: ../resources/img/styleInterpolation/expressiveStroke.gif
     :align: center
-    :alt: Transition between two polygon styles
+    :alt: Transition between two expressive strokes
     :figclass: align-center
     :width: 40%
+    
+    ExpressiveStroke interpolation. Top: interpolation result, bottom: interpolated paint brush.
     
 The sample used to generate this file is available at ``samples/interpolation/SLD/expressiveStroke_interpolation.sld.xml``.
 
@@ -101,15 +103,15 @@ Current supported parameter list:
 * Opacity,
 * Stroke (see section stroke_interpolation_)
 
-Example basic stroke
-====================
+Example basic polygon style
+===========================
 
-This example can be reproduced using ``samples/interpolation/SLD/fill_interpolation.sld.xml``. We interpolate both the color and the thickness of the stroke:
+This example can be reproduced using ``samples/interpolation/SLD/fill_interpolation.sld.xml``. We interpolate both the color used to fill the polygon and its stroke:
 
 .. literalinclude:: ../../../../geoxygene/geoxygene-appli/samples/interpolation/SLD/fill_interpolation.sld.xml
     :linenos:
     :language: xml
-    :emphasize-lines: 20, 21, 31, 32, 38, 39
+    :emphasize-lines: 19, 20, 30, 31, 37, 38
 
 Note that the stoke is not defined in the second style, so the final interpolated style is defined using the first style stroke, with an opacity computed according to :math:`\alpha`.
 Which leads to the following transition:
@@ -167,10 +169,13 @@ The sample ``samples/interpolation/SLD/advanced_partial_interpolation.sld.xml`` 
 Concurrent interpolation example
 ================================
 
+In this example there are two interpolation symbolizers: one to interpolate the polygon color, and another one for the stroke parameters.
+
 .. literalinclude:: ../../../../geoxygene/geoxygene-appli/samples/interpolation/SLD/advanced_split_interpolation.sld.xml
     :linenos:
     :language: xml
-    :emphasize-lines: 20, 21, 31, 32, 38, 39
+    :emphasize-lines: 10, 30, 31, 32, 57, 58
+Hence two sliders are available to manipulate each parameter independently:
 
 .. figure:: ../resources/img/styleInterpolation/split.gif
     :align: center
@@ -187,7 +192,7 @@ Automatic SLD pairing
 
 Two SLD sharing the same structure can be automatically parsed and merged using interpolation symbolizers.
 
-During this procedure, layers are matched by name. For each couple of layers, we traverse the styles, features, and rules to pair the symbolizers and put them in interpolation symbolizers. When a different number of symbolizers is available on each side, only the shared one are interpolated and the others discarded. 
+During the mixing procedure, layers are matched by name. For each couple of layers, we traverse the styles, features, and rules to pair the symbolizers and put them in interpolation symbolizers. When a different number of symbolizers is available on each side, only the shared one are interpolated and the others discarded. 
 
 To use this functionality you need to:
 
@@ -209,6 +214,6 @@ SLD validation and automatic style interpolation
 
 Interpolating between two symbolizers requires to read there definition, interpolate, and put the result back to the SLD. By construction the SLD is purely static and do not include any logic.
 
-We have implemented the interpolation as a validation step, which occurs each time a SLD is modified. During this stage the modified SLD is parsed, and depending on its content eventually modified. Further processing can be used, for instance for raster interpolation (see expressiveStroke_). In that case a new raster is generated on the fly according to input parameters and referred in the SLD.
+We have implemented the interpolation as a validation step, which occurs each time a SLD is modified. During this stage the modified SLD is parsed, and depending on its content eventually modified. Further processing can be used, for instance for raster interpolation (see expressiveStroke_). In that case a new raster is generated on the fly according to input parameters, then saved to the disk, and linked in the SLD as an usual raster file.
 
 .. note:: The generated file is temporary and not saved alongside the SLD. Each time the SLD is loaded and validated, a new interpolated raster is generated and used for visualization. Exporting such SLD outside of Geoxygen would require to manually edit it to refer to a copy of the interpolated raster stored in a known asset folder.
