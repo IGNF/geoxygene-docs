@@ -78,7 +78,19 @@ Which leads to the following transition:
 
 Example expressive stroke
 =========================
-Coming soon.
+
+.. _expressiveStroke:
+
+The syntax used to describe expressive strokes is not stable yet. However, in the current status it is possible to interpolate between two ExpressiveStroke, leading to the following result:
+
+.. figure:: ../resources/img/styleInterpolation/expressiveStroke.gif
+    :align: center
+    :alt: Transition between two polygon styles
+    :figclass: align-center
+    :width: 40%
+    
+The sample used to generate this file is available at ``samples/interpolation/SLD/expressiveStroke_interpolation.sld.xml``.
+
 
 Filling interpolation
 *********************
@@ -195,4 +207,8 @@ This resulting SLD can be mixed with another one by using a same procedure twice
 SLD validation and automatic style interpolation
 ************************************************
 
+Interpolating between two symbolizers requires to read there definition, interpolate, and put the result back to the SLD. By construction the SLD is purely static and do not include any logic.
 
+We have implemented the interpolation as a validation step, which occurs each time a SLD is modified. During this stage the modified SLD is parsed, and depending on its content eventually modified. Further processing can be used, for instance for raster interpolation (see expressiveStroke_). In that case a new raster is generated on the fly according to input parameters and referred in the SLD.
+
+.. note:: The generated file is temporary and not saved alongside the SLD. Each time the SLD is loaded and validated, a new interpolated raster is generated and used for visualization. Exporting such SLD outside of Geoxygen would require to manually edit it to refer to a copy of the interpolated raster stored in a known asset folder.
