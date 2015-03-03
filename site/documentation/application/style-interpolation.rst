@@ -4,12 +4,14 @@
 :Author: Nicolas Mellado
 :Version: 0.1
 :License: Create Commons with attribution
-:Date: 2 Mars 2015 
+:Date: 3 Mars 2015 
 
 Styles Interpolation
 ####################
 
 Style interpolation have been developed during the ANR project `Mapstyle <http://mapstyle.ign.fr/>`_, by Nicolas Mellado. It can be used either using GL an AWT projects.
+
+Last Update: 3rd March 2015
 
 Introduction
 ************
@@ -170,6 +172,24 @@ Concurrent interpolation example
 
 Automatic SLD pairing
 *********************
+
+Two SLD sharing the same structure can be automatically parsed and merged using interpolation symbolizers.
+
+During this procedure, layers are matched by name. For each couple of layers, we traverse the styles, features, and rules to pair the symbolizers and put them in interpolation symbolizers. When a different number of symbolizers is available on each side, only the shared one are interpolated and the others discarded. 
+
+To use this functionality you need to:
+
+.. figure:: ../resources/img/styleInterpolation/mix.png
+    :align: right
+    :alt: Concurrent interpolation
+    :figclass: right
+    
+* Load a first SLD (right inset: green button)
+* Load a second SLD for automatic mixing (right inset: red button)
+
+The two inputs are processed and a new SLD generated. 
+This resulting SLD can be mixed with another one by using a same procedure twice.
+
 
 
 SLD validation and automatic style interpolation
