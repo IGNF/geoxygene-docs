@@ -70,6 +70,14 @@ Télécharger le certificat depuis votre navigateur comme ceci :
 
       1.7 Sauvegarder votre certificat sur votre disque dur.  
           Par exemple : **E:\\certificat\\forge-cogit.crt**
+          
+      
+      .. warning::
+         
+         * Le nom du fichier doit être forge-cogit.crt (et non pas forge-cogit.ign.fr.crt)
+         
+         * Sous Linux, définissez le chemin en absolu (ne pas utiliser ~/certificat/forge-cogit.crt)
+      
 
    .. container:: rightside
    
@@ -612,53 +620,6 @@ Il faut installer le connector subclipse pour Maven.
 	  Cliquer sur **OK**, cocher le composant à installer et finir l'installation comme habituellement (securité, licenses, ...).
 	
 
-Connector *buildhelper* for Maven
-========================================	
-
-Le connecteur **buildhelper** doit aussi être installé. Il permet d'ajouter entre autres choses de nouveaux répertoires dans le classpath.  
-
-#. Aller dans le catalogue des connecteurs de Maven :
-      
-   .. container:: chemin
-      
-      Window >> Preferences >> Maven >> Discovery
-
-   Et cliquer sur **Open Catalog** 
-   
-   .. container:: centerside
-          
-             .. figure:: /documentation/resources/img/install/ConnectorBuildhelper.png
-                :width: 500px
-           
-                Figure 25 : Open Catalog
-   
-  
-#. Sélectionner le **buildhelper** connector
-	      
-   .. container:: centerside
-          
-      .. figure:: /documentation/resources/img/install/ConnectorBuildhelper_02.png
-         :width: 500px
-           
-         Figure 26 : buildhelper connector
-	      
-#. C'est parti pour l'installation 
-
-    .. container:: centerside
-          
-     .. figure:: /documentation/resources/img/install/ConnectorBuildhelper_03.png
-        :width: 500px
-           
-        Figure 27 : buildhelper connector version
-	      
-	
-	.. container:: centerside
-          
-     .. figure:: /documentation/resources/img/install/ConnectorBuildhelper_04.png
-        :width: 500px
-           
-        Figure 28 : buildhelper connector : accept security warning
-	      
 	      
 
 Maven preferences
