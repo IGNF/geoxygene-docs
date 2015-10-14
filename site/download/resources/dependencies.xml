@@ -1,6 +1,6 @@
 <properties>
 	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <geoxygene.version>1.7-SNAPSHOT</geoxygene.version>
+    <geoxygene.version>1.8-SNAPSHOT</geoxygene.version>
 </properties>
 	
 <dependencies>

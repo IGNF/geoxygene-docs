@@ -10,6 +10,7 @@ Developer Guide
 	
    install
    geoxygene
+   geoxygeneOGL
    launching
    openjump
    wps

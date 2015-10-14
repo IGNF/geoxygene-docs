@@ -1,0 +1,20 @@
+...
+<PolygonSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+   <Stroke>
+      <CssParameter name="stroke">#347302</CssParameter>
+      <CssParameter name="stroke-opacity">0.8</CssParameter>
+      <CssParameter name="stroke-width">1.0</CssParameter>
+   </Stroke>
+   <GeometryPropertyName>geom</GeometryPropertyName>
+   <Fill>
+      <BasicTexture xRepeat="false" yRepeat="false">
+         <Displacement x="0.0" y="0.0"/>
+         <ScaleFactor x="0.0" y="0.0"/>
+         <Rotation angle="0.0"/>
+         <url>file:///D:/IMG/bert.gif</url>
+      </BasicTexture>
+      <CssParameter name="fill">#dcdb72</CssParameter>
+      <CssParameter name="fill-opacity">0.8</CssParameter>
+   </Fill>
+</PolygonSymbolizer>
+   ...

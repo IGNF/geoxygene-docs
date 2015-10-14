@@ -185,7 +185,7 @@ où vous avez créé le fichier trust.jks et en remplaçant *leschiensaboient* p
 
    .. container:: chemin
 
-      -Djavax.net.ssl.trustStore=E:\\certificat\\trust.jks -Djavax.net.ssl.trustStorePassword= -Djavax.net.ssl.keyStore=  -Djavax.net.ssl.keyStoreType=pkcs12 -Djavax.net.ssl.keyStorePassword=leschiensaboient
+      -Djavax.net.ssl.trustStore=E:\\certificat\\trust.jks -Djavax.net.ssl.keyStorePassword=leschiensaboient
 
 
    .. container:: centerside

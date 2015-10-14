@@ -169,7 +169,10 @@ Cette opération peut prendre un certain temps !
 
 Lancement des interfaces graphiques 
 *****************************************
-Le guide de lancement des interfaces graphiques est décrit sur la : :ref:`page suivante <launchinggeox>`.
+
+Si vous voulez utiliser l'interface graphique avec un rendu OpenGL, il reste une configuration à faire, décrite :ref:`ici <rendugeoxogl>`.
+
+Sinon le guide de lancement des interfaces graphiques est décrit sur la : :ref:`page suivante <launchinggeox>`.
 
 
 
