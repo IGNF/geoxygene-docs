@@ -6,10 +6,10 @@ GeOxygene library
 
 
 * Binaries (jar) :
-    http://sourceforge.net/projects/oxygene-project/files/GeOxygene/1.6/binaries/
+    http://sourceforge.net/projects/oxygene-project/files/GeOxygene/1.7/binaries/
             
 * Sources (jar) :
-    http://sourceforge.net/projects/oxygene-project/files/GeOxygene/1.6/sources/
+    http://sourceforge.net/projects/oxygene-project/files/GeOxygene/1.7/sources/
             
-* Javadoc (jar) :
-    http://sourceforge.net/projects/oxygene-project/files/GeOxygene/1.6/javadoc/
+.. * Javadoc (jar) :
+..    http://sourceforge.net/projects/oxygene-project/files/GeOxygene/1.6/javadoc/

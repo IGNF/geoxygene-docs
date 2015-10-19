@@ -3,6 +3,15 @@
 Blog Archive
 ##############
 
+2015
+------
+
+* October 1, 2015 - **Mapstyle demonstration** 
+
+    Two demonstrations of using GeOxygene library at the GeoVIS Workshop, ISPRS GeoSpatial Week. Watch the video !
+
+
+
 2014
 ------
 

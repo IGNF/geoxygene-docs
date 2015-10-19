@@ -3,7 +3,7 @@
 GeOxygene releases
 ####################
 
-The current development version is GeOxygene-1.7-SNAPSHOT. The latest stable release is **GeOxygene 1.6**.
+The current development version is GeOxygene-1.8-SNAPSHOT. The latest stable release is **GeOxygene 1.7**.
 
 All releases can be obtained from the `SourceForge download area <http://sourceforge.net/projects/oxygene-project/files/?source=navbar>`_ .
 Snapshots and releases are also available from the `COGIT repositories <https://forge-cogit.ign.fr/nexus/content/repositories/>`_.
@@ -11,6 +11,24 @@ Snapshots and releases are also available from the `COGIT repositories <https://
 
 History of Changes
 -------------------
+
+Version 1.7 (2015/10/19)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  * Students works : dot density analysis, measures of complexity of map. 
+    
+  * Minkowski 2D operations (sum between two polygons A and B, subtraction of A and B with reference to the center of mass B, etc.)
+    
+  * Genetic algorithms (linear and nonlinear) of the least squares estimator
+    
+  * Polygons squaring by least squares compensation
+    
+  * A "lenses" plugin that can : show a more detailed view over a less detailed layer, view a portion of the raster layer over the vector one, etc.
+    
+  * OpenGL rendered 2D GUI added.
+    
+  * Probably last version using java 7  
+
 
 Version 1.6 (2014/01/23)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
