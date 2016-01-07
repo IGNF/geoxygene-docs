@@ -8,9 +8,17 @@ Contributions
    :maxdepth: 1
    
 
-   semiology
-   osm
-   3d
    topological-map
    data-matching
+   semiology
    .. style-interpolation
+   .. style-expressive
+   osm
+   moindres-carres-generiques
+   3d
+
+   
+.. role:: underline
+    :class: underline
+    
+    

@@ -229,7 +229,7 @@ News
     
     * Minkowski 2D operations (sum between two polygons A and B, subtraction of A and B with reference to the center of mass B, etc.)
     
-    * Genetic algorithms (linear and nonlinear) of the least squares estimator
+    * Generic algorithms (linear and nonlinear) of the least squares estimator
     
     * Polygons squaring by least squares compensation
     
