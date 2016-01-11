@@ -14,5 +14,6 @@ Tutorial
    filter
    motif
    contour
+   import
    plugin
 
