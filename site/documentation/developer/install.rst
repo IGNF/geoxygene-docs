@@ -9,9 +9,9 @@ Cette page a pour objectif de guider le développeur dans son installation de la
 
 .. note::
 
-  A compter de ce jour, GeOxygene passe au minimum en Java 1.7, la version java 1.8 est recommandée.
+  A compter de ce jour, GeOxygene passe au minimum en Java 1.7, la version Java 1.8 est recommandée.
   
-  Eclipse Mars est recommandé avec les plugins subclipse (>1.10.8) et m2 (>1.5.0)
+  Eclipse Mars est recommandé avec les plugins subclipse (>1.10.8) et m2 (>1.5.0), sachant que le plugin m2 est déjà installé dans Eclipse Mars.
   
   **Attention** : le connector subclipse pour Maven doit être installé à la main comme indiqué plus bas et non pas via le marketplace
 
@@ -131,14 +131,17 @@ Installation
 ================
 
 * Vous pouvez télécharger Eclipse Mars(4.5.2), directement à partir des liens ci-dessous :  
-
-====================================================================================================================================================================== ===========================================================================================================================================================================
-  `Windows 32-bit <http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/mars/2/eclipse-java-mars-2-win32.zip>`_                    `Windows 64-bit <http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/mars/2/eclipse-java-mars-2-win32-x86_64.zip>`_
-  `Mac OS X(Cocoa 32) <https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/luna/R/eclipse-standard-luna-R-macosx-cocoa.tar.gz>`_      `Mac OS X(Cocoa 64) <http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/mars/2/eclipse-java-mars-2-macosx-cocoa-x86_64.tar.gz>`_
-  `Linux 32-bit <http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/mars/2/eclipse-java-mars-2-linux-gtk.tar.gz>`_               `Linux 64-bit <http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/mars/2/eclipse-java-mars-2-linux-gtk-x86_64.tar.gz>`_
-====================================================================================================================================================================== ===========================================================================================================================================================================
-  
-   
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|`Windows 32-bit <http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/mars/2/eclipse-java-mars-2-win32.zip>`_                     |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|`Windows 64-bit <http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/mars/2/eclipse-java-mars-2-win32-x86_64.zip>`_              |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|`Mac OS X(Cocoa 64) <http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/mars/2/eclipse-java-mars-2-macosx-cocoa-x86_64.tar.gz>`_|
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|`Linux 32-bit <http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/mars/2/eclipse-java-mars-2-linux-gtk.tar.gz>`_                |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|`Linux 64-bit <http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/mars/2/eclipse-java-mars-2-linux-gtk-x86_64.tar.gz>`_         |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 * Décompresser le fichier téléchargé (Eclipse ne fournit pas d'installeur, juste un répertoire à dézipper).
 
@@ -340,11 +343,13 @@ Text editors
 Eclipse Plugins
 *********************************
 
-Maintenant, Eclipse est prêt pour l'installation des plugins nécessaires à GeOxygene. 
-Vous aurez besoin essentiellement des plugins EGit, Subversion (subclipse) et Maven (m2eclipse) ainsi que de ses connecteurs pour git et svn.
-Les plugin EGit et m2e sont déja installés dans Eclipse Mars, il ne reste qu'à installer éventuellement Subclipse (si on accès au SVN privé du COGIT), ainsi que les connecteurs subclipse et egit.
+Maintenant, Eclipse est prêt pour l'installation des plugins nécessaires à GeOxygene.
  
-Plugin Subclipse
+Vous aurez besoin essentiellement des plugins EGit, Subversion (subclipse) et Maven (m2eclipse) ainsi que de ses connecteurs pour git et svn.
+
+Les plugin EGit et m2e sont déja installés dans Eclipse Mars, il ne reste qu'à installer éventuellement Subclipse (si on accès au SVN privé du COGIT), ainsi que les connecteurs m2e pour Subclipse et EGit.
+ 
+Plugin Subclipse (optionnel pour la partie publique de GeOxygene)
 ======================
 
 Subclipse est un plugin Eclipse permettant d'utiliser Subversion (SVN) directement depuis votre éditeur préféré.
@@ -462,7 +467,7 @@ Subclipse est un plugin Eclipse permettant d'utiliser Subversion (SVN) directeme
             Figure 17 : SVN interface
 
 
-Plugin M2E
+Plugin M2E (optionnel car déjà installé si Eclipse Mars)
 =========================
 **Attention**
 Le plugin est sans doute déja installé pour une version récente d'Eclipse ( > Luna), passer directement à l'installation des connecteurs subclipse (si besoin) et egit dans ce cas.
@@ -548,7 +553,7 @@ Pour installer GeOxygene il faut le plugin m2e et le connector subclipse.
 
 
 
-Connector Subclipse for Maven
+Connector Subclipse for Maven (optionnel pour la partie publique de GeOxygene)
 ========================================
 
 Il faut installer le connector subclipse pour Maven si on veut pouvoir importer directement le code du SVN privé du COGIT depuis Eclipse. 
@@ -631,7 +636,7 @@ Pour installer le connector EGit on pourra faire dans le menu d'Eclipse
 
 .. container:: chemin
 
-File >> Import
+	File >> Import
 
 .. container:: twocol
 
@@ -672,7 +677,7 @@ File >> Import
 
 	.. container:: leftside
 	
-	   Chercher dans m2e Team providers le connecteur m2e-egit et le sélectionner, puis faire "Finish"
+	   Chercher dans **m2e Team providers** le connecteur **m2e-egit** et le sélectionner, puis faire "Finish"
 	  
 	.. container:: rightside     
 	       
