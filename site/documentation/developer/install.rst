@@ -119,7 +119,8 @@ Télécharger le certificat depuis votre navigateur comme ceci :
 
 Refaire la même chose (sauvegarder le certificat depuis le navigateur, et l'importer dans le fichier trust.jks précédemment crée) avec 
 
-.. container:: svnurl    
+.. container:: svnurl
+    
 	https://repo.maven.apache.org/
 
 en changeant le nom de l'alias, par exemple :
